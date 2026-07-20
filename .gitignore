@@ -1,0 +1,7 @@
+node_modules
+msme-dashboard/src/pages/SchemePerfromancePagDev.jsx
+stateData.js
+msme-dashboard\src\newDashboard\pages\DFOIntelligenceReferencePreview.jsx
+msme-dashboard\dist
+dist
+vite.config.js.timestamp*
