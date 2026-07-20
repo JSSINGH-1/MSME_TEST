@@ -613,57 +613,174 @@ const _SECTORS_D2 = {
     { sector:'Rubber Products', count:16800 },
   ],
 
-  Alappuzha: [
-    // district-specific data
-  ],
+ Alappuzha: [
+  { sector:'Other personal service activities', count:3785 },
+  { sector:'Other land transport', count:3228 },
+  { sector:'Manufacture of other food products', count:2445 },
+  { sector:'Travel agency and tour operator activities', count:2231 },
+  { sector:'Event catering and other food service activities', count:2072 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:2052 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:1995 },
+  { sector:'Other manufacturing n.e.c.', count:1633 },
+  { sector:'Retail sale of other goods in specialized stores', count:1488 },
+  { sector:'Construction of buildings', count:1332 },
+],
 
-  Kannur: [
-    // district-specific data
-  ],
+ Kannur: [
+  { sector:'Other personal service activities', count:10245 },
+  { sector:'Other land transport', count:10208 },
+  { sector:'Manufacture of other food products', count:2767 },
+  { sector:'Travel agency and tour operator activities', count:2564 },
+  { sector:'Event catering and other food service activities', count:1947 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:1827 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:1450 },
+  { sector:'Transport via pipeline', count:1377 },
+  { sector:'Renting and leasing of motor vehicles', count:1324 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:1288 },
+],
 
-  Idukki: [
-    // district-specific data
-  ],
+ Idukki: [
+  { sector:'Other personal service activities', count:2693 },
+  { sector:'Renting and leasing of motor vehicles', count:2130 },
+  { sector:'Manufacture of other food products', count:1909 },
+  { sector:'Other land transport', count:1664 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:1583 },
+  { sector:'Short term accommodation activities', count:967 },
+  { sector:'Event catering and other food service activities', count:914 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:869 },
+  { sector:'Retail sale in non-specialized stores', count:849 },
+  { sector:'Travel agency and tour operator activities', count:773 },
+],
 
   Kasaragod: [
-    // district-specific data
-  ],
+  { sector:'Other land transport', count:5002 },
+  { sector:'Other personal service activities', count:2371 },
+  { sector:'Manufacture of other food products', count:1723 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:1063 },
+  { sector:'Real estate activities on a fee or contract basis', count:1101 },
+  { sector:'Event catering and other food service activities', count:962 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:957 },
+  { sector:'Other manufacturing n.e.c.', count:945 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:706 },
+  { sector:'Construction of buildings', count:693 },
+],
 
   Kollam: [
-    // district-specific data
-  ],
+  { sector:'Other personal service activities', count:6157 },
+  { sector:'Manufacture of other food products', count:3948 },
+  { sector:'Other land transport', count:3299 },
+  { sector:'Event catering and other food service activities', count:3119 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:2400 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:2282 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:2007 },
+  { sector:'Retail sale in non-specialized stores', count:1743 },
+  { sector:'Retail sale of other goods in specialized stores', count:1665 },
+  { sector:'Travel agency and tour operator activities', count:1399 },
+],
 
-  Kottayam: [
-    // district-specific data
-  ],
+ Kottayam: [
+  { sector:'Other land transport', count:4312 },
+  { sector:'Other personal service activities', count:3704 },
+  { sector:'Manufacture of other food products', count:2045 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:1817 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:1798 },
+  { sector:'Event catering and other food service activities', count:1743 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:1577 },
+  { sector:'Retail sale in non-specialized stores', count:1453 },
+  { sector:'Retail sale of other goods in specialized stores', count:1422 },
+  { sector:'Travel agency and tour operator activities', count:1272 },
+],
 
   Kozhikode: [
-    // district-specific data
-  ],
+  { sector:'Other land transport', count:8747 },
+  { sector:'Other personal service activities', count:7170 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:4283 },
+  { sector:'Manufacture of other food products', count:3935 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:2645 },
+  { sector:'Event catering and other food service activities', count:2479 },
+  { sector:'Retail sale of other goods in specialized stores', count:2368 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:2277 },
+  { sector:'Other manufacturing n.e.c.', count:1919 },
+  { sector:'Retail sale in non-specialized stores', count:1896 },
+],
 
-  Malappuram: [
-    // district-specific data
-  ],
+ Malappuram: [
+  { sector:'Other land transport', count:9829 },
+  { sector:'Other personal service activities', count:6097 },
+  { sector:'Manufacture of other food products', count:3366 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:2868 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:2690 },
+  { sector:'Event catering and other food service activities', count:2538 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:2440 },
+  { sector:'Retail sale of other goods in specialized stores', count:2236 },
+  { sector:'Retail sale in non-specialized stores', count:1755 },
+  { sector:'Other manufacturing n.e.c.', count:1677 },
+],
 
   Palakkad: [
-    // district-specific data
-  ],
+  { sector:'Other land transport', count:6916 },
+  { sector:'Other personal service activities', count:6599 },
+  { sector:'Manufacture of other food products', count:3563 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:3511 },
+  { sector:'Event catering and other food service activities', count:2543 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:2409 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:2091 },
+  { sector:'Retail sale of other goods in specialized stores', count:2062 },
+  { sector:'Retail sale in non-specialized stores', count:1928 },
+  { sector:'Transport via pipeline', count:1788 },
+],
 
-  Pathanamthitta: [
-    // district-specific data
-  ],
+ Pathanamthitta: [
+  { sector:'Other personal service activities', count:3155 },
+  { sector:'Other land transport', count:2446 },
+  { sector:'Manufacture of other food products', count:1644 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:1157 },
+  { sector:'Event catering and other food service activities', count:1085 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:1039 },
+  { sector:'Retail sale in non-specialized stores', count:907 },
+  { sector:'Transport via pipeline', count:862 },
+  { sector:'Retail sale of other goods in specialized stores', count:851 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:837 },
+],
 
   Thiruvananthapuram: [
-    // district-specific data
-  ],
+  { sector:'Other land transport', count:9003 },
+  { sector:'Other personal service activities', count:8279 },
+  { sector:'Manufacture of other food products', count:5440 },
+  { sector:'Event catering and other food service activities', count:4522 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:3877 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:3826 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:3450 },
+  { sector:'Travel agency and tour operator activities', count:3021 },
+  { sector:'Retail sale of other goods in specialized stores', count:2934 },
+  { sector:'Construction of buildings', count:2658 },
+],
 
-  Thrissur: [
-    // district-specific data
-  ],
+ Thrissur: [
+  { sector:'Other land transport', count:8604 },
+  { sector:'Other personal service activities', count:5944 },
+  { sector:'Manufacture of other food products', count:4772 },
+  { sector:'Manufacture of wearing apparel except fur apparel', count:3446 },
+  { sector:'Event catering and other food service activities', count:3228 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:2828 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:2783 },
+  { sector:'Retail sale of other goods in specialized stores', count:2555 },
+  { sector:'Other manufacturing n.e.c.', count:2354 },
+  { sector:'Retail sale in non-specialized stores', count:2105 },
+],
 
   Wayanad: [
-    // district-specific data
-  ],
+  { sector:'Other personal service activities', count:3658 },
+  { sector:'Manufacture of other food products', count:1362 },
+  { sector:'Event catering and other food service activities', count:1109 },
+  { sector:'Other land transport', count:990 },
+  { sector:'Retail sale of food beverages and tobacco in specialized stores', count:799 },
+  { sector:'Retail sale of other household equipment in specialized stores', count:694 },
+  { sector:'Short term accommodation activities', count:678 },
+  { sector:'Retail sale in non-specialized stores', count:599 },
+  { sector:'Retail sale of other goods in specialized stores', count:588 },
+  { sector:'Other manufacturing n.e.c.', count:548 },
+],
 
 },
   rajasthan: [
