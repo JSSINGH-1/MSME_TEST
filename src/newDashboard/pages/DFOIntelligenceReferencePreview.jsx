@@ -114,13 +114,14 @@ function PreviewTopBar({ month, onMonth }) {
 }
 
 function KpiStrip({ kpis, stateLabel }) {
+  const districtLabel = kpis?.district ?? 'Ernakulam';
   const cards = [
-    { label: 'Total MSMEs', value: kpis?.totalMSMEs?.toLocaleString('en-IN'), sub: stateLabel, icon: Users, color: 'text-blue-700' },
-    { label: `${kpis?.d1Name} Share`, value: `${kpis?.d1Share}%`, sub: `${kpis?.d1Count?.toLocaleString('en-IN')} MSMEs`, icon: MapPin, color: 'text-emerald-700' },
-    { label: `${kpis?.d2Name} Share`, value: `${kpis?.d2Share}%`, sub: `${kpis?.d2Count?.toLocaleString('en-IN')} MSMEs`, icon: MapPin, color: 'text-teal-700' },
-    { label: 'Champion Portal Cases', value: kpis?.grievances?.toLocaleString('en-IN'), sub: 'Total Grievances', icon: Headphones, color: 'text-indigo-700' },
-    { label: 'YoY Growth (2024 vs 2023)', value: `+${kpis?.yoyGrowth}%`, sub: 'Registrations', icon: TrendingUp, color: 'text-green-700' },
-    { label: `MSME Density (${stateLabel})`, value: kpis?.density?.toLocaleString('en-IN'), sub: 'Per 10,000 Population', icon: Landmark, color: 'text-orange-700' },
+    { label: 'District', value: districtLabel, sub: stateLabel, icon: Users, color: 'text-blue-700' },
+    { label: 'Total MSMEs', value: kpis?.totalMSMEs?.toLocaleString('en-IN'), sub: 'District MSMEs', icon: MapPin, color: 'text-emerald-700' },
+    { label: 'Kerala Share', value: `${kpis?.keralaShare}%`, sub: `${kpis?.districtMSMEs?.toLocaleString('en-IN')} MSMEs`, icon: MapPin, color: 'text-teal-700' },
+    { label: 'Total Industries (NIC Activities)', value: kpis?.totalIndustries?.toLocaleString('en-IN'), sub: 'NIC Activities', icon: Headphones, color: 'text-indigo-700' },
+    { label: 'Champion Portal Cases', value: kpis?.championPortalCases?.toLocaleString('en-IN'), sub: 'Total Cases', icon: TrendingUp, color: 'text-green-700' },
+    { label: 'District Rank', value: kpis?.districtRank, sub: 'Within Kerala', icon: Landmark, color: 'text-orange-700' },
   ];
 
   return (
@@ -420,9 +421,9 @@ function Heatmap({ data }) {
 }
 
 export default function DFOIntelligenceReferencePreview() {
-  const [month, setMonth] = useState('May 2025');
-  const [stateId, setStateId] = useState('goa');
-  const [district, setDistrict] = useState('All Districts');
+  const [month, setMonth] = useState('Jul 2026');
+  const [stateId, setStateId] = useState('kerala');
+  const [district, setDistrict] = useState('Ernakulam');
   const currentState = INTELLIGENCE_STATES.find((state) => state.id === stateId) ?? INTELLIGENCE_STATES[0];
 
   const kpis = useMemo(() => getIntelligenceKPIs(stateId, month), [stateId, month]);
@@ -467,10 +468,10 @@ export default function DFOIntelligenceReferencePreview() {
 
           <div className="mt-3 grid grid-cols-12 gap-3">
             <div className="col-span-4">
-              <SectorBars data={d1Sectors} title={`Top 10 Sectors by MSME Count - ${nsComp.d1Name}`} color="#1e3a8a" />
+              <SectorBars data={d1Sectors} title={`Top 10 Industries - ${kpis?.district ?? 'Ernakulam'}`} color="#1e3a8a" />
             </div>
             <div className="col-span-4">
-              <SectorBars data={d2Sectors} title={`Top 10 Sectors by MSME Count - ${nsComp.d2Name}`} color={teal} />
+              <SectorBars data={d2Sectors} title={`Bottom 5 Industries - ${kpis?.district ?? 'Ernakulam'}`} color={teal} />
             </div>
             <div className="col-span-4">
               <OpportunityPanel data={opportunity.data} focusAreas={opportunity.focusAreas} />

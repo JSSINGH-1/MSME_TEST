@@ -5,12 +5,12 @@ import { ChevronDown, RefreshCw, Users, MapPin, Headphones, TrendingUp, Building
 import TopBar from '@/newDashboard/components/layout/TopBar';
 
 // Intelligence-specific charts & tables
-import RegistrationTrendChart  from '@/newDashboard/components/charts/RegistrationTrendChart';
-import NorthSouthBarChart      from '@/newDashboard/components/charts/NorthSouthBarChart';
-import HorizontalBarChart      from '@/newDashboard/components/charts/HorizontalBarChart';
-import OpportunityBubbleChart  from '@/newDashboard/components/charts/OpportunityBubbleChart';
-import GrievancesPanel         from '@/newDashboard/components/charts/GrievancesPanel';
-import SectorHeatmap           from '@/newDashboard/components/tables/SectorHeatmap';
+import RegistrationTrendChart from '@/newDashboard/components/charts/RegistrationTrendChart';
+import NorthSouthBarChart from '@/newDashboard/components/charts/NorthSouthBarChart';
+import HorizontalBarChart from '@/newDashboard/components/charts/HorizontalBarChart';
+import OpportunityBubbleChart from '@/newDashboard/components/charts/OpportunityBubbleChart';
+import GrievancesPanel from '@/newDashboard/components/charts/GrievancesPanel';
+import SectorHeatmap from '@/newDashboard/components/tables/SectorHeatmap';
 
 // Data getters
 import {
@@ -28,53 +28,37 @@ import {
 } from '@/newDashboard/data/dfoIntelligenceData';
 import SectionHeader from '../components/ui/SectionHeader';
 
-
-
 function IntelKPICard({ value, sub, label, icon: Icon, iconColor = 'text-blue-600', iconBg = 'bg-blue-100' }) {
   return (
-  
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3 hover:shadow-md transition-shadow">
       <div className="flex items-start gap-3 ">
-
-        <div
-          className={`w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center ${iconBg}`}
-        >
-          <Icon size={30} strokeWidth={2.5}/>
+        <div className={`w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center ${iconBg}`}>
+          <Icon size={30} strokeWidth={2.5} />
         </div>
 
         <div className="flex flex-col text-[#0d1f4c]">
-          <span className="text-[10px] font-bold  leading-tight min-h-[10px]">
-            {label}
-
-          </span>
-
-          <span className=" text-[15px] font-bold tabular-nums mt-0.5 "> 
-            {value}
-          </span>
-
-          <span className="text-[10px] font-semibold mt-0.5">
-            {sub && <p className= "-mt-0.5">{sub}</p>}
-          </span>
+          <span className="text-[10px] font-bold leading-tight min-h-[10px]">{label}</span>
+          <span className="text-[15px] font-bold tabular-nums mt-0.5">{value}</span>
+          <span className="text-[10px] font-semibold mt-0.5">{sub && <p className="-mt-0.5">{sub}</p>}</span>
         </div>
-
       </div>
     </div>
   );
 }
 
-// At a Glance panel
 function AtAGlance({ data }) {
   if (!data) return null;
+
   const items = [
-    { label: 'Population (State)', value: data.population,    icon: Users },
-    { label: 'Total Districts',    value: data.districts,     icon: MapPin },
-    { label: 'Sub-Districts',      value: data.subDistricts,  icon: Building2 },
-    { label: 'Blocks',             value: data.blocks,        icon: Building2 },
-    { label: 'Villages',           value: data.villages,      icon: MapPin },
+    { label: 'Population (State)', value: data.population, icon: Users },
+    { label: 'Total Districts', value: data.districts, icon: MapPin },
+    { label: 'Sub-Districts', value: data.subDistricts, icon: Building2 },
+    { label: 'Blocks', value: data.blocks, icon: Building2 },
+    { label: 'Villages', value: data.villages, icon: MapPin },
   ];
+
   return (
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 h-full">
-      {/* <p className="text-[9px] font-bold text-gray-500 uppercase tracking-wide mb-2">At a Glance</p> */}
       <SectionHeader title="At a Glance" />
       <div className="space-y-1.5">
         {items.map(item => {
@@ -96,13 +80,12 @@ function AtAGlance({ data }) {
   );
 }
 
-// Recommended Actions panel
 function RecommendedActions({ data }) {
   if (!data) return null;
+
   return (
     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 h-full">
-      {/* <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wide mb-3">Recommended Actions</p> */}
-      <SectionHeader title='Recommended Actions'/>
+      <SectionHeader title="Recommended Actions" />
       <div className="grid grid-cols-2 gap-4">
         {[{ name: data.d1Name, actions: data.d1 }, { name: data.d2Name, actions: data.d2 }].map(group => (
           <div key={group.name}>
@@ -111,7 +94,7 @@ function RecommendedActions({ data }) {
               {group.actions?.map((action, i) => (
                 <div key={i} className="flex gap-1.5">
                   <CheckCircle size={11} className="text-emerald-500 flex-shrink-0 mt-0.5" />
-                  <p className="text-[9px] text-[#0d1f4c]  leading-relaxed">{action}</p>
+                  <p className="text-[9px] text-[#0d1f4c] leading-relaxed">{action}</p>
                 </div>
               ))}
             </div>
@@ -122,7 +105,6 @@ function RecommendedActions({ data }) {
   );
 }
 
-// Dropdown
 function Select({ value, onChange, options, label }) {
   return (
     <div className="flex items-center gap-2">
@@ -141,44 +123,35 @@ function Select({ value, onChange, options, label }) {
   );
 }
 
-
 export default function DFOIntelligencePage() {
   const { onOpenSidebar } = useOutletContext();
-  const [month,    setMonth]    = useState('Jul 2026');
-  const [stateId,  setStateId]  = useState('goa');
-  const [district, setDistrict] = useState('All Districts');
+  const [month, setMonth] = useState('Jul 2026');
+  const [stateId, setStateId] = useState('kerala');
+  const [district, setDistrict] = useState('Ernakulam');
 
   const currentState = INTELLIGENCE_STATES.find(s => s.id === stateId) ?? INTELLIGENCE_STATES[0];
 
-  /**
-   * All data derived from stateId + month.
-   * TO CONNECT REAL API: replace useMemo with useEffect + fetch.
-   *
-   *   useEffect(() => {
-   *     fetch(`/api/intelligence/${stateId}/kpis?month=${month}`)
-   *       .then(r => r.json()).then(setKpis);
-   *   }, [stateId, month]);
-   */
-  const kpis       = useMemo(() => getIntelligenceKPIs(stateId, month),      [stateId, month]);
-  const trend      = useMemo(() => getRegistrationTrend(stateId),             [stateId]);
-  const nsComp     = useMemo(() => getNorthSouthComparison(stateId, month),   [stateId, month]);
-  const d1Sectors  = useMemo(() => getD1TopSectors(stateId, month, district), [stateId, month, district]);
-  const d2Sectors  = useMemo(() => getD2TopSectors(stateId, month, district), [stateId, month, district]);
-  const oppMatrix  = useMemo(() => getOpportunityMatrix(stateId),             [stateId]);
-  const grievances = useMemo(() => getGrievanceData(stateId, month),          [stateId, month]);
-  const actions    = useMemo(() => getRecommendedActions(stateId),            [stateId]);
-  const atAGlance  = useMemo(() => getAtAGlance(stateId),                     [stateId]);
-  const heatmap    = useMemo(() => getSectorHeatmap(stateId, month, district), [stateId, month, district]);
+  const kpis = useMemo(() => getIntelligenceKPIs(stateId, month), [stateId, month]);
+  const trend = useMemo(() => getRegistrationTrend(stateId), [stateId]);
+  const nsComp = useMemo(() => getNorthSouthComparison(stateId, month), [stateId, month]);
+  const d1Sectors = useMemo(() => getD1TopSectors(stateId, month, district), [stateId, month, district]);
+  const d2Sectors = useMemo(() => getD2TopSectors(stateId, month, district), [stateId, month, district]);
+  const oppMatrix = useMemo(() => getOpportunityMatrix(stateId), [stateId]);
+  const grievances = useMemo(() => getGrievanceData(stateId, month), [stateId, month]);
+  const actions = useMemo(() => getRecommendedActions(stateId), [stateId]);
+  const atAGlance = useMemo(() => getAtAGlance(stateId), [stateId]);
+  const heatmap = useMemo(() => getSectorHeatmap(stateId, month, district), [stateId, month, district]);
 
   const stateLabel = currentState.label;
+  const districtLabel = kpis?.district ?? district;
 
   const cards = [
-    { label: 'Total MSMEs', value: kpis?.totalMSMEs?.toLocaleString('en-IN'), sub: stateLabel, icon: Users, color: 'text-blue-700' },
-    { label: `${kpis?.d1Name} Share`, value: `${kpis?.d1Share}%`, sub: `${kpis?.d1Count?.toLocaleString('en-IN')} MSMEs`, icon: MapPin, color: 'text-emerald-700' },
-    { label: `${kpis?.d2Name} Share`, value: `${kpis?.d2Share}%`, sub: `${kpis?.d2Count?.toLocaleString('en-IN')} MSMEs`, icon: MapPin, color: 'text-teal-500' },
-    { label: 'Champion Portal Cases', value: kpis?.grievances?.toLocaleString('en-IN'), sub: 'Total Grievances', icon: Headphones, color: 'text-indigo-700' },
-    { label: 'YoY Growth (2024 vs 2023)', value: `+${kpis?.yoyGrowth}%`, sub: 'Registrations', icon: TrendingUp, color: 'text-emerald-700' },
-    { label: `MSME Density (${stateLabel})`, value: kpis?.density?.toLocaleString('en-IN'), sub: 'Per 10,000 Population', icon: Landmark, color: 'text-orange-700' },
+    { label: 'District', value: districtLabel, sub: stateLabel, icon: Users, color: 'text-blue-700' },
+    { label: 'Total MSMEs', value: kpis?.totalMSMEs?.toLocaleString('en-IN'), sub: 'District MSMEs', icon: MapPin, color: 'text-emerald-700' },
+    { label: 'Kerala Share', value: `${kpis?.keralaShare}%`, sub: `${kpis?.districtMSMEs?.toLocaleString('en-IN')} MSMEs`, icon: MapPin, color: 'text-teal-500' },
+    { label: 'Total Industries (NIC Activities)', value: kpis?.totalIndustries?.toLocaleString('en-IN'), sub: 'NIC Activities', icon: Headphones, color: 'text-indigo-700' },
+    { label: 'Champion Portal Cases', value: kpis?.championPortalCases?.toLocaleString('en-IN'), sub: 'Total Cases', icon: TrendingUp, color: 'text-emerald-700' },
+    { label: 'District Rank', value: kpis?.districtRank, sub: 'Within Kerala', icon: Landmark, color: 'text-orange-700' },
   ];
 
   return (
@@ -192,8 +165,6 @@ export default function DFOIntelligencePage() {
       />
 
       <main className="flex-1 overflow-y-auto">
-
-        {/* ── Sub-header: State + District filters + Last Updated ── */}
         <div className="flex flex-wrap text-[#0d1f4c] items-center justify-between px-3 lg:px-5 py-2.5 bg-white border-b border-gray-200 gap-3 lg:gap-4">
           <div className="flex flex-wrap items-center gap-3 lg:gap-5">
             <Select
@@ -216,19 +187,20 @@ export default function DFOIntelligencePage() {
         </div>
 
         <div className="p-3 lg:p-4 space-y-3 lg:space-y-4">
-
-          {/* ── Row 1: KPI Cards ────────────────────────────── */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-3">
             {cards.map(({ label, value, sub, icon: Icon, color }) => (
               <IntelKPICard
-              label={label} value={value}
-              sub={sub}
-              icon={Icon} iconBg={color} iconColor={color}
-            />
+                key={label}
+                label={label}
+                value={value}
+                sub={sub}
+                icon={Icon}
+                iconBg={color}
+                iconColor={color}
+              />
             ))}
           </div>
 
-          {/* ── Row 2: Trend + North vs South Comparison ────── */}
           <div className="grid grid-cols-1 lg:grid-cols-6 gap-3 lg:gap-4">
             <div className="lg:col-span-3">
               <RegistrationTrendChart
@@ -245,19 +217,17 @@ export default function DFOIntelligencePage() {
                 takeaway={nsComp?.takeaway}
               />
             </div>
-
           </div>
 
-          {/* ── Row 3: Top Sectors + Opportunity Matrix ──────── */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
             <HorizontalBarChart
               data={d1Sectors}
-              title={`Top 10 Sectors by MSME Count — ${nsComp?.d1Name}`}
+              title={`Top 10 Industries — ${districtLabel}`}
               color="#1e3a8a"
             />
             <HorizontalBarChart
               data={d2Sectors}
-              title={`Top 10 Sectors by MSME Count — ${nsComp?.d2Name}`}
+              title={`Bottom 5 Industries — ${districtLabel}`}
               color="#0d9488"
             />
             <OpportunityBubbleChart
@@ -266,7 +236,6 @@ export default function DFOIntelligencePage() {
             />
           </div>
 
-          {/* ── Row 4: Grievances + Recommended Actions + At a Glance ── */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-3 lg:gap-4 items-stretch">
             <div className="md:col-span-2 lg:col-span-3 h-full">
               <GrievancesPanel
@@ -279,21 +248,9 @@ export default function DFOIntelligencePage() {
             </div>
             <div className="md:col-span-2 lg:col-span-1 h-full">
               <AtAGlance data={atAGlance} />
-            </div> 
-            {/* {/* <div className="grid grid-cols-[2.4fr_1.8fr_0.8fr] gap-4 items-start">
-              <GrievancesPanel
-                data={grievances}
-                title={`Champion Portal Analytics (${month})`}
-              />
-
-              <RecommendedActions data={actions} />
-
-              <AtAGlance data={atAGlance} />
-            </div> */}
-            
+            </div>
           </div>
 
-          {/* ── Row 5: Sector Heatmap ────────────────────────── */}
           <SectorHeatmap data={heatmap} />
 
           <p className="text-[9px] text-gray-400 pb-1 text-center">

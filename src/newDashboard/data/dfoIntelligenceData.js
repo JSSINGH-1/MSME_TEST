@@ -71,6 +71,61 @@ export function parseMonthYear(monthYear) {
   return { month: MONTH_MAP[m] ?? 5, year: parseInt(y, 10) || 2025 };
 }
 
+const KERALA_ERNAKULAM_2026 = {
+  district: 'Ernakulam',
+  stateLabel: 'Kerala',
+  totalMSMEs: 132369,
+  keralaMSMEs: 968931,
+  keralaShare: 13.66,
+  totalIndustries: 219,
+  championPortalCases: 778,
+  districtRank: '1 / 14',
+  registrationTrend: [
+    { year: 2020, label: '2020', value: 8913 },
+    { year: 2021, label: '2021', value: 20120 },
+    { year: 2022, label: '2022', value: 22171 },
+    { year: 2023, label: '2023', value: 25105 },
+    { year: 2024, label: '2024', value: 26208 },
+    { year: 2025, label: '2025', value: 17858 },
+    { year: 2026, label: '2026\n(YTD)', value: 11994 },
+  ],
+  registrationInsights: [
+    'Highest MSME district in Kerala.',
+    'Other land transport is the largest industry (8,713).',
+    'Champion Portal grievances: 778.',
+    'MSME registrations peaked in 2024 before declining in 2025 and 2026 (YTD).',
+  ],
+  topIndustries: [
+    { sector: 'Other land transport', count: 8713 },
+    { sector: 'Other personal service activities', count: 6549 },
+    { sector: 'Manufacture of other food products', count: 5038 },
+    { sector: 'Travel agency and tour operator activities', count: 4250 },
+    { sector: 'Retail sale of other household equipment in specialized stores', count: 3934 },
+    { sector: 'Retail sale of food beverages and tobacco in specialized stores', count: 3736 },
+    { sector: 'Event catering and other food service activities', count: 3440 },
+    { sector: 'Retail sale of other goods in specialized stores', count: 3389 },
+    { sector: 'Manufacture of wearing apparel except fur apparel', count: 3243 },
+    { sector: 'Restaurants and mobile food service activities', count: 2965 },
+  ],
+  bottomIndustries: [
+    { sector: 'Compulsory social security activities', count: 2 },
+    { sector: 'Reinsurance', count: 2 },
+    { sector: 'Radio broadcasting', count: 3 },
+    { sector: 'Manufacture of irradiation electromedical and electrotherapeutic equipment', count: 4 },
+    { sector: 'Manufacture of weapons and ammunition', count: 4 },
+  ],
+  comparisonMetrics: [
+    { metric: 'MSME Count', d1: 132369, d2: 968931 },
+    { metric: 'District Rank', d1: 1, d2: 14 },
+    { metric: 'Kerala Share', d1: 13.66, d2: 13.66 },
+  ],
+};
+
+function isKeralaErnakulamSnapshot(stateId, monthYear, district = 'Ernakulam') {
+  if (stateId !== 'kerala') return false;
+  const { year } = parseMonthYear(monthYear);
+  return year === 2026 && district === 'Ernakulam';
+}
 
 // STATES & DISTRICTS
 // TODO: GET /api/intelligence/states
@@ -169,6 +224,33 @@ const _BASE_KPIS = {
 /** TODO: GET /api/intelligence/:stateId/kpis?year=YYYY&month=MM */
 export function getIntelligenceKPIs(stateId, monthYear) {
   const { month, year } = parseMonthYear(monthYear);
+  if (stateId === 'kerala' && year === 2026) {
+    return {
+      district: KERALA_ERNAKULAM_2026.district,
+      stateLabel: KERALA_ERNAKULAM_2026.stateLabel,
+      totalMSMEs: KERALA_ERNAKULAM_2026.totalMSMEs,
+      keralaShare: KERALA_ERNAKULAM_2026.keralaShare,
+      totalIndustries: KERALA_ERNAKULAM_2026.totalIndustries,
+      championPortalCases: KERALA_ERNAKULAM_2026.championPortalCases,
+      districtRank: KERALA_ERNAKULAM_2026.districtRank,
+      keralaMSMEs: KERALA_ERNAKULAM_2026.keralaMSMEs,
+      districtMSMEs: KERALA_ERNAKULAM_2026.totalMSMEs,
+      d1Name: KERALA_ERNAKULAM_2026.district,
+      d1Share: KERALA_ERNAKULAM_2026.keralaShare,
+      d1Count: KERALA_ERNAKULAM_2026.totalMSMEs,
+      d2Name: 'Kerala',
+      d2Share: 100,
+      d2Count: KERALA_ERNAKULAM_2026.keralaMSMEs,
+      grievances: KERALA_ERNAKULAM_2026.championPortalCases,
+      yoyGrowth: 0,
+      density: 0,
+      lastUpdated: (() => {
+        const today = new Date();
+        const lastWeek = new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000);
+        return `${String(lastWeek.getDate()).padStart(2, '0')} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][lastWeek.getMonth()]} ${lastWeek.getFullYear()} 10:30 AM`;
+      })(),
+    };
+  }
   const b = _BASE_KPIS[stateId] ?? _BASE_KPIS.goa;
   const v = (val) => applyVariance(val, stateId, year, month);
   const totalMSMEs = v(b.totalMSMEs);
@@ -239,6 +321,9 @@ const _TREND_INSIGHTS = {
 
 /** TODO: GET /api/intelligence/:stateId/registration-trend */
 export function getRegistrationTrend(stateId) {
+  if (stateId === 'kerala') {
+    return { data: KERALA_ERNAKULAM_2026.registrationTrend, insights: KERALA_ERNAKULAM_2026.registrationInsights };
+  }
   const base = _TREND_BASE[stateId] ?? _TREND_BASE.goa;
   const data = Object.entries(base).map(([yr, val]) => ({
     year: parseInt(yr), label: _trendLabel(parseInt(yr)), value: val,
@@ -320,6 +405,14 @@ const _NS_BASE = {
 /** TODO: GET /api/intelligence/:stateId/district-comparison?year=YYYY&month=MM */
 export function getNorthSouthComparison(stateId, monthYear) {
   const { month, year } = parseMonthYear(monthYear);
+  if (stateId === 'kerala' && year === 2026) {
+    return {
+      d1Name: 'Ernakulam',
+      d2Name: 'Kerala',
+      metrics: KERALA_ERNAKULAM_2026.comparisonMetrics,
+      takeaway: 'Highest MSME district in Kerala.',
+    };
+  }
   const base = _NS_BASE[stateId] ?? _NS_BASE.goa;
   const v = (val) => applyVariance(val, stateId, year, month);
   return {
@@ -829,6 +922,10 @@ function getKeralaSectorData(source, district = 'All Districts') {
 export function getD1TopSectors(stateId, monthYear, district = 'All Districts') {
   const { month, year } = parseMonthYear(monthYear);
 
+  if (isKeralaErnakulamSnapshot(stateId, monthYear, district)) {
+    return KERALA_ERNAKULAM_2026.topIndustries;
+  }
+
   let base;
 
   if (stateId === 'kerala') {
@@ -845,6 +942,10 @@ export function getD1TopSectors(stateId, monthYear, district = 'All Districts') 
 
 export function getD2TopSectors(stateId, monthYear, district = 'All Districts') {
   const { month, year } = parseMonthYear(monthYear);
+
+  if (isKeralaErnakulamSnapshot(stateId, monthYear, district)) {
+    return KERALA_ERNAKULAM_2026.bottomIndustries;
+  }
 
   let base;
 
@@ -1020,6 +1121,20 @@ export function getGrievanceData(stateId, monthYear) {
   const { month, year } = parseMonthYear(monthYear);
   const b = _GRIEVANCE_BASE[stateId] ?? _GRIEVANCE_BASE.goa;
   const v = (val) => applyVariance(val, stateId, year, month);
+  if (stateId === 'kerala' && year === 2026) {
+    const total = KERALA_ERNAKULAM_2026.championPortalCases;
+    return {
+      total,
+      d1: b.d1,
+      d2: b.d2,
+      d1Name: _BASE_KPIS[stateId]?.d1Name ?? 'District 1',
+      d2Name: _BASE_KPIS[stateId]?.d2Name ?? 'District 2',
+      d1Pct: b.d1Pct,
+      d2Pct: b.d2Pct,
+      categories: b.categories.map(c => ({ ...c })),
+      alert: b.alert,
+    };
+  }
   const total = v(b.total);
   return {
     total,
