@@ -114,7 +114,7 @@ function PreviewTopBar({ month, onMonth }) {
 }
 
 function KpiStrip({ kpis, stateLabel }) {
-  const districtLabel = kpis?.district ?? 'Ernakulam';
+  const districtLabel = kpis?.district ?? 'All Districts';
   const cards = [
     { label: 'District', value: districtLabel, sub: stateLabel, icon: Users, color: 'text-blue-700' },
     { label: 'Total MSMEs', value: kpis?.totalMSMEs?.toLocaleString('en-IN'), sub: 'District MSMEs', icon: MapPin, color: 'text-emerald-700' },
@@ -423,19 +423,21 @@ function Heatmap({ data }) {
 export default function DFOIntelligenceReferencePreview() {
   const [month, setMonth] = useState('Jul 2026');
   const [stateId, setStateId] = useState('kerala');
-  const [district, setDistrict] = useState('Ernakulam');
+  const [district, setDistrict] = useState('All Districts');
   const currentState = INTELLIGENCE_STATES.find((state) => state.id === stateId) ?? INTELLIGENCE_STATES[0];
 
-  const kpis = useMemo(() => getIntelligenceKPIs(stateId, month), [stateId, month]);
-  const trend = useMemo(() => getRegistrationTrend(stateId), [stateId]);
-  const nsComp = useMemo(() => getNorthSouthComparison(stateId, month), [stateId, month]);
+  const kpis = useMemo(() => getIntelligenceKPIs(stateId, month, district), [stateId, month, district]);
+  const trend = useMemo(() => getRegistrationTrend(stateId, district), [stateId, district]);
+  const nsComp = useMemo(() => getNorthSouthComparison(stateId, month, district), [stateId, month, district]);
   const d1Sectors = useMemo(() => getD1TopSectors(stateId, month, district), [stateId, month, district]);
   const d2Sectors = useMemo(() => getD2TopSectors(stateId, month, district), [stateId, month, district]);
-  const opportunity = useMemo(() => getOpportunityMatrix(stateId), [stateId]);
-  const grievances = useMemo(() => getGrievanceData(stateId, month), [stateId, month]);
-  const actions = useMemo(() => getRecommendedActions(stateId), [stateId]);
-  const glance = useMemo(() => getAtAGlance(stateId), [stateId]);
+  const opportunity = useMemo(() => getOpportunityMatrix(stateId, district), [stateId, district]);
+  const grievances = useMemo(() => getGrievanceData(stateId, month, district), [stateId, month, district]);
+  const actions = useMemo(() => getRecommendedActions(stateId, district), [stateId, district]);
+  const glance = useMemo(() => getAtAGlance(stateId, district), [stateId, district]);
   const heatmap = useMemo(() => getSectorHeatmap(stateId, month, district), [stateId, month, district]);
+
+  const districtLabel = kpis?.district ?? district;
 
   return (
     <>
@@ -459,7 +461,7 @@ export default function DFOIntelligenceReferencePreview() {
 
           <div className="mt-3 grid grid-cols-12 gap-3">
             <div className="col-span-6">
-              <TrendPanel data={trend.data} insights={trend.insights} title={`MSME Registrations Trend (${currentState.label})`} />
+              <TrendPanel data={trend.data} insights={trend.insights} title={`MSME Registrations Trend (${districtLabel})`} />
             </div>
             <div className="col-span-6">
               <DistrictMetricsPanel d1Name={nsComp.d1Name} d2Name={nsComp.d2Name} metrics={nsComp.metrics} takeaway={nsComp.takeaway} month={month} />
@@ -468,10 +470,10 @@ export default function DFOIntelligenceReferencePreview() {
 
           <div className="mt-3 grid grid-cols-12 gap-3">
             <div className="col-span-4">
-              <SectorBars data={d1Sectors} title={`Top 10 Industries - ${kpis?.district ?? 'Ernakulam'}`} color="#1e3a8a" />
+              <SectorBars data={d1Sectors} title={`Top 10 Industries - ${districtLabel}`} color="#1e3a8a" />
             </div>
             <div className="col-span-4">
-              <SectorBars data={d2Sectors} title={`Bottom 5 Industries - ${kpis?.district ?? 'Ernakulam'}`} color={teal} />
+              <SectorBars data={d2Sectors} title={`Bottom 5 Industries - ${districtLabel}`} color={teal} />
             </div>
             <div className="col-span-4">
               <OpportunityPanel data={opportunity.data} focusAreas={opportunity.focusAreas} />

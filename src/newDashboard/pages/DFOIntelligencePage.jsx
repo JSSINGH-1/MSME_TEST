@@ -127,19 +127,19 @@ export default function DFOIntelligencePage() {
   const { onOpenSidebar } = useOutletContext();
   const [month, setMonth] = useState('Jul 2026');
   const [stateId, setStateId] = useState('kerala');
-  const [district, setDistrict] = useState('Ernakulam');
+  const [district, setDistrict] = useState('All Districts');
 
   const currentState = INTELLIGENCE_STATES.find(s => s.id === stateId) ?? INTELLIGENCE_STATES[0];
 
-  const kpis = useMemo(() => getIntelligenceKPIs(stateId, month), [stateId, month]);
-  const trend = useMemo(() => getRegistrationTrend(stateId), [stateId]);
-  const nsComp = useMemo(() => getNorthSouthComparison(stateId, month), [stateId, month]);
+  const kpis = useMemo(() => getIntelligenceKPIs(stateId, month, district), [stateId, month, district]);
+  const trend = useMemo(() => getRegistrationTrend(stateId, district), [stateId, district]);
+  const nsComp = useMemo(() => getNorthSouthComparison(stateId, month, district), [stateId, month, district]);
   const d1Sectors = useMemo(() => getD1TopSectors(stateId, month, district), [stateId, month, district]);
   const d2Sectors = useMemo(() => getD2TopSectors(stateId, month, district), [stateId, month, district]);
-  const oppMatrix = useMemo(() => getOpportunityMatrix(stateId), [stateId]);
-  const grievances = useMemo(() => getGrievanceData(stateId, month), [stateId, month]);
-  const actions = useMemo(() => getRecommendedActions(stateId), [stateId]);
-  const atAGlance = useMemo(() => getAtAGlance(stateId), [stateId]);
+  const oppMatrix = useMemo(() => getOpportunityMatrix(stateId, district), [stateId, district]);
+  const grievances = useMemo(() => getGrievanceData(stateId, month, district), [stateId, month, district]);
+  const actions = useMemo(() => getRecommendedActions(stateId, district), [stateId, district]);
+  const atAGlance = useMemo(() => getAtAGlance(stateId, district), [stateId, district]);
   const heatmap = useMemo(() => getSectorHeatmap(stateId, month, district), [stateId, month, district]);
 
   const stateLabel = currentState.label;
@@ -206,7 +206,7 @@ export default function DFOIntelligencePage() {
               <RegistrationTrendChart
                 data={trend.data}
                 insights={trend.insights}
-                title={`MSME Registrations Trend (${stateLabel})`}
+                title={`MSME Registrations Trend (${districtLabel})`}
               />
             </div>
             <div className="lg:col-span-3">
@@ -240,7 +240,7 @@ export default function DFOIntelligencePage() {
             <div className="md:col-span-2 lg:col-span-3 h-full">
               <GrievancesPanel
                 data={grievances}
-                title={`Champion Portal Analytics (${month})`}
+                title={`Champion Portal Analytics - ${districtLabel} (${month})`}
               />
             </div>
             <div className="lg:col-span-2 h-full">

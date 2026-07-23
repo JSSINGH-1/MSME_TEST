@@ -1,0 +1,634 @@
+{
+  "state": {
+    "id": "kerala",
+    "label": "Kerala",
+    "defaultDistrict": "Ernakulam",
+    "districts": [
+      {
+        "id": "All Districts",
+        "label": "All Districts",
+        "rank": "—",
+        "summaryShare": 13.66,
+        "totalMSMEs": 968931,
+        "districtMSMEs": 968931,
+        "totalIndustries": 219,
+        "championPortalCases": 2654,
+        "districtRank": "—",
+        "grievances": { "d1": 1324, "d2": 1330 },
+        "trend": {
+          "data": [
+            { "year": 2020, "label": "2020", "value": 46238 },
+            { "year": 2021, "label": "2021", "value": 73163 },
+            { "year": 2022, "label": "2022", "value": 102067 },
+            { "year": 2023, "label": "2023", "value": 139608 },
+            { "year": 2024, "label": "2024", "value": 123814 },
+            { "year": 2025, "label": "2025", "value": 96893 },
+            { "year": 2026, "label": "2026\n(YTD)", "value": 51247 }
+          ],
+          "insights": [
+            "Kerala registrations show steady growth through 2023.",
+            "The 2024 peak is followed by a moderation in 2025 and 2026 (YTD).",
+            "All district view combines state-wide district activity into one consolidated snapshot."
+          ]
+        },
+        "comparison": {
+          "d1Name": "All Districts",
+          "d2Name": "Kerala",
+          "metrics": [
+            { "metric": "MSME Count", "d1": 968931, "d2": 968931 },
+            { "metric": "District Rank", "d1": 0, "d2": 0 },
+            { "metric": "Kerala Share", "d1": 13.66, "d2": 13.66 }
+          ],
+          "takeaway": "Consolidated Kerala view used for the All Districts selection."
+        },
+        "topIndustries": [
+          { "sector": "Other land transport", "count": 8713 },
+          { "sector": "Other personal service activities", "count": 6549 },
+          { "sector": "Manufacture of other food products", "count": 5038 },
+          { "sector": "Travel agency and tour operator activities", "count": 4250 },
+          { "sector": "Retail sale of other household equipment in specialized stores", "count": 3934 },
+          { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 3736 },
+          { "sector": "Event catering and other food service activities", "count": 3440 },
+          { "sector": "Retail sale of other goods in specialized stores", "count": 3389 },
+          { "sector": "Manufacture of wearing apparel except fur apparel", "count": 3243 },
+          { "sector": "Restaurants and mobile food service activities", "count": 2965 }
+        ],
+        "bottomIndustries": [
+          { "sector": "Compulsory social security activities", "count": 2 },
+          { "sector": "Reinsurance", "count": 2 },
+          { "sector": "Radio broadcasting", "count": 3 },
+          { "sector": "Manufacture of irradiation electromedical and electrotherapeutic equipment", "count": 4 },
+          { "sector": "Manufacture of weapons and ammunition", "count": 4 }
+        ],
+        "opportunity": {
+          "data": [
+            { "name": "Retail Trade", "enterpriseCount": 92, "schemePenetration": 34, "size": 24, "color": "#0891b2" },
+            { "name": "Construction", "enterpriseCount": 84, "schemePenetration": 48, "size": 22, "color": "#059669" },
+            { "name": "Restaurants", "enterpriseCount": 72, "schemePenetration": 42, "size": 18, "color": "#f97316" },
+            { "name": "Wholesale Trade", "enterpriseCount": 65, "schemePenetration": 38, "size": 18, "color": "#8b5cf6" },
+            { "name": "Agriculture", "enterpriseCount": 58, "schemePenetration": 22, "size": 16, "color": "#ef4444" },
+            { "name": "Personal Services", "enterpriseCount": 54, "schemePenetration": 28, "size": 16, "color": "#f59e0b" }
+          ],
+          "focusAreas": "Retail Trade, Construction and Restaurant sectors have the highest MSME concentration. Agriculture and Personal Services require improved scheme penetration."
+        },
+        "grievance": {
+          "total": 2654,
+          "d1": 1324,
+          "d2": 1330,
+          "d1Name": "All Districts",
+          "d2Name": "Kerala",
+          "d1Pct": 49.9,
+          "d2Pct": 50.1,
+          "categories": [
+            { "name": "Registration", "count": 690, "pct": 26.0, "color": "#1e3a8a" },
+            { "name": "Loan / Finance", "count": 610, "pct": 23.0, "color": "#1e3a8a" },
+            { "name": "Scheme Benefits", "count": 531, "pct": 20.0, "color": "#1e3a8a" },
+            { "name": "Payment Delays", "count": 451, "pct": 17.0, "color": "#f97316" },
+            { "name": "Others", "count": 372, "pct": 14.0, "color": "#9ca3af" }
+          ],
+          "alert": "Consolidated grievance view across Kerala. Registration and loan-related issues account for nearly half of all grievances."
+        },
+        "actions": {
+          "d1Name": "All Districts",
+          "d2Name": "Kerala",
+          "d1": [
+            "Increase MSME outreach across district clusters.",
+            "Accelerate Udyam registration support camps.",
+            "Promote PMEGP and MUDRA awareness.",
+            "Improve Champion grievance disposal."
+          ],
+          "d2": [
+            "Expand district level MSME facilitation centres.",
+            "Increase awareness in rural enterprises.",
+            "Strengthen financial linkage through banks.",
+            "Improve digital registration assistance."
+          ]
+        },
+        "glance": {
+          "population": "3.34 Cr",
+          "districts": 14,
+          "subDistricts": 77,
+          "blocks": 152,
+          "villages": 1664
+        },
+        "heatmap": {
+          "columns": [
+            "Retail Trade",
+            "Construction",
+            "Restaurants",
+            "Wholesale Trade",
+            "Agriculture",
+            "Personal Services"
+          ],
+          "rows": [
+            { "district": "All Districts", "data": [94800, 68200, 54400, 26400, 82400, 22200] },
+            { "district": "Kerala", "data": [48200, 32400, 24800, 16200, 18400, 14800] }
+          ]
+        }
+      },
+      {
+        "id": "Alappuzha",
+        "label": "Alappuzha",
+        "rank": "8 / 14",
+        "summaryShare": 5.8,
+        "totalMSMEs": 56237,
+        "districtMSMEs": 56237,
+        "totalIndustries": 216,
+        "championPortalCases": 197,
+        "districtRank": "8 / 14",
+        "grievances": { "d1": 390, "d2": 422 },
+        "trend": {
+          "data": [
+            { "year": 2020, "label": "2020", "value": 2900 },
+            { "year": 2021, "label": "2021", "value": 7232 },
+            { "year": 2022, "label": "2022", "value": 9615 },
+            { "year": 2023, "label": "2023", "value": 11235 },
+            { "year": 2024, "label": "2024", "value": 11734 },
+            { "year": 2025, "label": "2025", "value": 7700 },
+            { "year": 2026, "label": "2026\n(YTD)", "value": 5821 }
+          ],
+          "insights": [
+            "Other personal service activities is the largest industry.",
+            "Other land transport is the second-largest sector.",
+            "Champion Portal grievances: 197.",
+            "MSME registrations peaked in 2024 before declining."
+          ]
+        },
+        "comparison": {
+          "d1Name": "Alappuzha",
+          "d2Name": "Kerala",
+          "metrics": [
+            { "metric": "MSME Count", "d1": 56237, "d2": 968931 },
+            { "metric": "District Rank", "d1": 8, "d2": 14 },
+            { "metric": "Kerala Share", "d1": 5.8, "d2": 13.66 }
+          ],
+          "takeaway": "Coastal activity remains important, but the district trails the major urban and industrial centers."
+        },
+        "topIndustries": [
+          { "sector": "Other personal service activities", "count": 3785 },
+          { "sector": "Other land transport", "count": 3228 },
+          { "sector": "Manufacture of other food products", "count": 2445 },
+          { "sector": "Travel agency and tour operator activities", "count": 2231 },
+          { "sector": "Event catering and other food service activities", "count": 2072 },
+          { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 2052 },
+          { "sector": "Retail sale of other household equipment in specialized stores", "count": 1995 },
+          { "sector": "Other manufacturing n.e.c.", "count": 1633 },
+          { "sector": "Retail sale of other goods in specialized stores", "count": 1488 },
+          { "sector": "Retail sale in non-specialized stores", "count": 1388 }
+        ],
+        "bottomIndustries": [
+          { "sector": "Activities of holding companies", "count": 1 },
+          { "sector": "Investigation activities", "count": 1 },
+          { "sector": "Manufacture of air and spacecraft and related machinery", "count": 1 },
+          { "sector": "Manufacture of coke oven products", "count": 1 },
+          { "sector": "Manufacture of magnetic and optical media", "count": 1 }
+        ],
+        "opportunity": {
+          "data": [
+            { "name": "Tourism", "enterpriseCount": 78, "schemePenetration": 28, "size": 20, "color": "#0891b2" },
+            { "name": "Retail", "enterpriseCount": 70, "schemePenetration": 34, "size": 18, "color": "#059669" },
+            { "name": "Transport", "enterpriseCount": 62, "schemePenetration": 31, "size": 16, "color": "#f97316" },
+            { "name": "Food Processing", "enterpriseCount": 55, "schemePenetration": 24, "size": 16, "color": "#8b5cf6" },
+            { "name": "Services", "enterpriseCount": 49, "schemePenetration": 20, "size": 14, "color": "#ef4444" },
+            { "name": "Construction", "enterpriseCount": 44, "schemePenetration": 18, "size": 14, "color": "#f59e0b" }
+          ],
+          "focusAreas": "Tourism and food processing need stronger scheme outreach. Retail and transport clusters can absorb more formal support."
+        },
+        "grievance": {
+          "total": 197,
+          "d1": 390,
+          "d2": 422,
+          "d1Name": "Alappuzha",
+          "d2Name": "Kerala",
+          "d1Pct": 48.0,
+          "d2Pct": 52.0,
+          "categories": [
+            { "name": "Registration", "count": 214, "pct": 26.4, "color": "#1e3a8a" },
+            { "name": "Loan / Finance", "count": 189, "pct": 23.3, "color": "#1e3a8a" },
+            { "name": "Scheme Benefits", "count": 160, "pct": 19.7, "color": "#1e3a8a" },
+            { "name": "Payment Delays", "count": 143, "pct": 17.6, "color": "#f97316" },
+            { "name": "Others", "count": 106, "pct": 13.1, "color": "#9ca3af" }
+          ],
+          "alert": "Tourism-linked units and transport-related registrations create most grievances."
+        },
+        "actions": {
+          "d1Name": "Alappuzha",
+          "d2Name": "Kerala",
+          "d1": [
+            "Run seasonal outreach for tourism-linked MSMEs.",
+            "Increase registration support at local facilitation centres.",
+            "Promote bank linkage for food processing units.",
+            "Improve grievance turnaround for service units."
+          ],
+          "d2": [
+            "Expand district level MSME facilitation centres.",
+            "Increase awareness in rural enterprises.",
+            "Strengthen financial linkage through banks.",
+            "Improve digital registration assistance."
+          ]
+        },
+        "glance": { "population": "21.08 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": {
+          "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Event catering and other food service activities", "Construction of buildings"],
+          "rows": [
+            { "district": "Alappuzha", "data": [3785, 3228, 2445, 2231, 2072, 1332] },
+            { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3440, 3243] }
+          ]
+        }
+      },
+      {
+        "id": "Ernakulam",
+        "label": "Ernakulam",
+        "rank": "1 / 14",
+        "summaryShare": 13.66,
+        "totalMSMEs": 132369,
+        "districtMSMEs": 132369,
+        "totalIndustries": 219,
+        "championPortalCases": 778,
+        "districtRank": "1 / 14",
+        "grievances": { "d1": 478, "d2": 300 },
+        "trend": {
+          "data": [
+            { "year": 2020, "label": "2020", "value": 8913 },
+            { "year": 2021, "label": "2021", "value": 20120 },
+            { "year": 2022, "label": "2022", "value": 22171 },
+            { "year": 2023, "label": "2023", "value": 25105 },
+            { "year": 2024, "label": "2024", "value": 26208 },
+            { "year": 2025, "label": "2025", "value": 17858 },
+            { "year": 2026, "label": "2026\n(YTD)", "value": 11994 }
+          ],
+          "insights": [
+            "Highest MSME district in Kerala.",
+            "Other land transport is the largest industry (8,713).",
+            "Champion Portal grievances: 778.",
+            "MSME registrations peaked in 2024 before declining in 2025 and 2026 (YTD)."
+          ]
+        },
+        "comparison": {
+          "d1Name": "Ernakulam",
+          "d2Name": "Kerala",
+          "metrics": [
+            { "metric": "MSME Count", "d1": 132369, "d2": 968931 },
+            { "metric": "District Rank", "d1": 1, "d2": 14 },
+            { "metric": "Kerala Share", "d1": 13.66, "d2": 13.66 }
+          ],
+          "takeaway": "Ernakulam leads the state in MSME concentration and continues to anchor Kerala's district activity."
+        },
+        "topIndustries": [
+          { "sector": "Other land transport", "count": 8713 },
+          { "sector": "Other personal service activities", "count": 6549 },
+          { "sector": "Manufacture of other food products", "count": 5038 },
+          { "sector": "Travel agency and tour operator activities", "count": 4250 },
+          { "sector": "Retail sale of other household equipment in specialized stores", "count": 3934 },
+          { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 3736 },
+          { "sector": "Event catering and other food service activities", "count": 3440 },
+          { "sector": "Retail sale of other goods in specialized stores", "count": 3389 },
+          { "sector": "Manufacture of wearing apparel except fur apparel", "count": 3243 },
+          { "sector": "Restaurants and mobile food service activities", "count": 2965 }
+        ],
+        "bottomIndustries": [
+          { "sector": "Compulsory social security activities", "count": 2 },
+          { "sector": "Reinsurance", "count": 2 },
+          { "sector": "Radio broadcasting", "count": 3 },
+          { "sector": "Manufacture of irradiation electromedical and electrotherapeutic equipment", "count": 4 },
+          { "sector": "Manufacture of weapons and ammunition", "count": 4 }
+        ],
+        "opportunity": {
+          "data": [
+            { "name": "Retail Trade", "enterpriseCount": 92, "schemePenetration": 34, "size": 24, "color": "#0891b2" },
+            { "name": "Construction", "enterpriseCount": 84, "schemePenetration": 48, "size": 22, "color": "#059669" },
+            { "name": "Restaurants", "enterpriseCount": 72, "schemePenetration": 42, "size": 18, "color": "#f97316" },
+            { "name": "Wholesale Trade", "enterpriseCount": 65, "schemePenetration": 38, "size": 18, "color": "#8b5cf6" },
+            { "name": "Agriculture", "enterpriseCount": 58, "schemePenetration": 22, "size": 16, "color": "#ef4444" },
+            { "name": "Personal Services", "enterpriseCount": 54, "schemePenetration": 28, "size": 16, "color": "#f59e0b" }
+          ],
+          "focusAreas": "Retail Trade, Construction and Restaurant sectors have the highest MSME concentration. Agriculture and Personal Services require improved scheme penetration."
+        },
+        "grievance": {
+          "total": 778,
+          "d1": 478,
+          "d2": 300,
+          "d1Name": "Ernakulam",
+          "d2Name": "Kerala",
+          "d1Pct": 61.4,
+          "d2Pct": 38.6,
+          "categories": [
+            { "name": "Registration", "count": 202, "pct": 26.0, "color": "#1e3a8a" },
+            { "name": "Loan / Finance", "count": 179, "pct": 23.0, "color": "#1e3a8a" },
+            { "name": "Scheme Benefits", "count": 156, "pct": 20.0, "color": "#1e3a8a" },
+            { "name": "Payment Delays", "count": 132, "pct": 17.0, "color": "#f97316" },
+            { "name": "Others", "count": 109, "pct": 14.0, "color": "#9ca3af" }
+          ],
+          "alert": "Ernakulam reports the highest grievance volume in Kerala, with registration and loan issues leading the mix."
+        },
+        "actions": {
+          "d1Name": "Ernakulam",
+          "d2Name": "Kerala",
+          "d1": [
+            "Increase MSME outreach in Ernakulam industrial clusters.",
+            "Accelerate Udyam registration support camps.",
+            "Promote PMEGP and MUDRA awareness.",
+            "Improve Champion grievance disposal."
+          ],
+          "d2": [
+            "Expand district level MSME facilitation centres.",
+            "Increase awareness in rural enterprises.",
+            "Strengthen financial linkage through banks.",
+            "Improve digital registration assistance."
+          ]
+        },
+        "glance": { "population": "32.53 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": {
+          "columns": ["Other land transport", "Other personal service activities", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of other household equipment in specialized stores", "Retail sale of food beverages and tobacco in specialized stores"],
+          "rows": [
+            { "district": "Ernakulam", "data": [8713, 6549, 5038, 4250, 3934, 3736] },
+            { "district": "Kerala", "data": [48200, 32400, 24800, 16200, 18400, 14800] }
+          ]
+        }
+      },
+      {
+        "id": "Idukki",
+        "label": "Idukki",
+        "rank": "13 / 14",
+        "summaryShare": 3.37,
+        "totalMSMEs": 32635,
+        "districtMSMEs": 32635,
+        "totalIndustries": 214,
+        "championPortalCases": 74,
+        "districtRank": "13 / 14",
+        "grievances": { "d1": 190, "d2": 236 },
+        "trend": { "data": [
+          { "year": 2021, "label": "2021", "value": 3114 },
+          { "year": 2022, "label": "2022", "value": 4708 },
+          { "year": 2023, "label": "2023", "value": 6908 },
+          { "year": 2024, "label": "2024", "value": 6966 },
+          { "year": 2025, "label": "2025", "value": 6119 },
+          { "year": 2026, "label": "2026\n(YTD)", "value": 3546 }
+        ], "insights": ["Idukki contributes 3.37% of Kerala MSMEs.", "Other personal service activities is the largest industry.", "Champion Portal grievances: 74.", "MSME registrations peaked in 2024."] },
+        "comparison": { "d1Name": "Idukki", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 32635, "d2": 968931 }, { "metric": "District Rank", "d1": 13, "d2": 14 }, { "metric": "Kerala Share", "d1": 3.37, "d2": 13.66 }], "takeaway": "Idukki has a smaller MSME base and requires focused facilitation to convert local economic activity into registered enterprises." },
+        "topIndustries": [
+          { "sector": "Other personal service activities", "count": 2693 },
+          { "sector": "Renting and leasing of motor vehicles", "count": 2130 },
+          { "sector": "Manufacture of other food products", "count": 1909 },
+          { "sector": "Other land transport", "count": 1821 },
+          { "sector": "Travel agency and tour operator activities", "count": 1439 },
+          { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 1325 },
+          { "sector": "Retail sale of other household equipment in specialized stores", "count": 1281 },
+          { "sector": "Retail sale of other goods in specialized stores", "count": 1147 },
+          { "sector": "Manufacture of wearing apparel except fur apparel", "count": 1091 },
+          { "sector": "Construction of buildings", "count": 1046 }
+        ],
+        "bottomIndustries": [
+          { "sector": "Compulsory social security activities", "count": 1 },
+          { "sector": "Manufacture of knitted and crocheted apparel", "count": 1 },
+          { "sector": "Manufacture of optical instruments and equipment", "count": 1 },
+          { "sector": "Pension funding", "count": 1 },
+          { "sector": "Research and experimental development on social sciences and humanities", "count": 1 }
+        ],
+        "opportunity": { "data": [
+          { "name": "Agriculture", "enterpriseCount": 58, "schemePenetration": 22, "size": 16, "color": "#ef4444" },
+          { "name": "Tourism", "enterpriseCount": 52, "schemePenetration": 26, "size": 16, "color": "#0891b2" },
+          { "name": "Transport", "enterpriseCount": 48, "schemePenetration": 20, "size": 14, "color": "#059669" },
+          { "name": "Food Processing", "enterpriseCount": 46, "schemePenetration": 18, "size": 14, "color": "#f97316" },
+          { "name": "Services", "enterpriseCount": 41, "schemePenetration": 14, "size": 12, "color": "#8b5cf6" },
+          { "name": "Construction", "enterpriseCount": 38, "schemePenetration": 12, "size": 12, "color": "#f59e0b" }
+        ], "focusAreas": "Agriculture, tourism and food processing need stronger scheme reach. Smaller service units are most likely to benefit from local facilitation." },
+        "grievance": { "total": 74, "d1": 190, "d2": 236, "d1Name": "Idukki", "d2Name": "Kerala", "d1Pct": 44.6, "d2Pct": 55.4, "categories": [{ "name": "Registration", "count": 111, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 98, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 85, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 72, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 60, "pct": 14.0, "color": "#9ca3af" }], "alert": "Credit linkage and registrations need attention in rural clusters." },
+        "actions": { "d1Name": "Idukki", "d2Name": "Kerala", "d1": ["Strengthen registration camps in rural blocks.", "Support agriculture and tourism units with credit linkage.", "Improve digital filing support.", "Push bank coordination for loan approvals."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "11.08 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Growing of perennial crops", "Travel agency and tour operator activities", "Event catering and other food service activities"], "rows": [{ "district": "Idukki", "data": [2254, 2188, 1145, 1082, 964, 902] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3440, 3243] }] }
+      },
+      {
+        "id": "Kannur",
+        "label": "Kannur",
+        "rank": "6 / 14",
+        "summaryShare": 7.13,
+        "totalMSMEs": 69094,
+        "districtMSMEs": 69094,
+        "totalIndustries": 217,
+        "championPortalCases": 130,
+        "districtRank": "6 / 14",
+        "grievances": { "d1": 590, "d2": 504 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 2109 }, { "year": 2021, "label": "2021", "value": 7403 }, { "year": 2022, "label": "2022", "value": 12294 }, { "year": 2023, "label": "2023", "value": 15946 }, { "year": 2024, "label": "2024", "value": 16740 }, { "year": 2025, "label": "2025", "value": 8441 }, { "year": 2026, "label": "2026\n(YTD)", "value": 6161 }], "insights": ["Other personal service activities is the largest industry.", "Other land transport is a close second.", "Champion Portal grievances: 130.", "MSME registrations peaked in 2024 before declining."] },
+        "comparison": { "d1Name": "Kannur", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 69094, "d2": 968931 }, { "metric": "District Rank", "d1": 6, "d2": 14 }, { "metric": "Kerala Share", "d1": 7.13, "d2": 13.66 }], "takeaway": "Kannur has a healthy MSME base with room to deepen formalisation." },
+        "topIndustries": [{ "sector": "Other personal service activities", "count": 10245 }, { "sector": "Other land transport", "count": 10208 }, { "sector": "Manufacture of other food products", "count": 2767 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 2553 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 2411 }, { "sector": "Retail sale of other goods in specialized stores", "count": 2246 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 2157 }, { "sector": "Travel agency and tour operator activities", "count": 2083 }, { "sector": "Manufacture of other textiles", "count": 1955 }, { "sector": "Construction of buildings", "count": 1871 }],
+        "bottomIndustries": [{ "sector": "Manufacture of air and spacecraft and related machinery", "count": 1 }, { "sector": "Manufacture of man-made fibres", "count": 1 }, { "sector": "Manufacture of military fighting vehicles", "count": 1 }, { "sector": "Manufacture of weapons and ammunition", "count": 1 }, { "sector": "Pension funding", "count": 1 }],
+        "opportunity": { "data": [{ "name": "Services", "enterpriseCount": 66, "schemePenetration": 30, "size": 18, "color": "#0891b2" }, { "name": "Transport", "enterpriseCount": 62, "schemePenetration": 26, "size": 16, "color": "#059669" }, { "name": "Food Processing", "enterpriseCount": 58, "schemePenetration": 24, "size": 16, "color": "#f97316" }, { "name": "Retail", "enterpriseCount": 54, "schemePenetration": 20, "size": 14, "color": "#8b5cf6" }, { "name": "Apparel", "enterpriseCount": 48, "schemePenetration": 18, "size": 14, "color": "#ef4444" }, { "name": "Tourism", "enterpriseCount": 45, "schemePenetration": 22, "size": 14, "color": "#f59e0b" }], "focusAreas": "Service units and transport operators need more scheme awareness and loan facilitation." },
+        "grievance": { "total": 130, "d1": 590, "d2": 504, "d1Name": "Kannur", "d2Name": "Kerala", "d1Pct": 53.9, "d2Pct": 46.1, "categories": [{ "name": "Registration", "count": 284, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 252, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 219, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 186, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 153, "pct": 14.0, "color": "#9ca3af" }], "alert": "Kannur's grievances are dominated by registration and finance queries." },
+        "actions": { "d1Name": "Kannur", "d2Name": "Kerala", "d1": ["Extend district registration camps to service clusters.", "Strengthen loan desk support for small units.", "Promote scheme benefits through local associations.", "Improve grievance closure times."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "25.23 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Event catering and other food service activities", "Retail sale of other household equipment in specialized stores"], "rows": [{ "district": "Kannur", "data": [10245, 10208, 2767, 2564, 1947, 1827] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3440, 3243] }] }
+      },
+      {
+        "id": "Kasaragod",
+        "label": "Kasaragod",
+        "rank": "14 / 14",
+        "summaryShare": 3.52,
+        "totalMSMEs": 34079,
+        "districtMSMEs": 34079,
+        "totalIndustries": 212,
+        "championPortalCases": 73,
+        "districtRank": "14 / 14",
+        "grievances": { "d1": 170, "d2": 192 },
+        "trend": { "data": [{ "year": 2021, "label": "2021", "value": 4009 }, { "year": 2022, "label": "2022", "value": 6085 }, { "year": 2023, "label": "2023", "value": 7430 }, { "year": 2024, "label": "2024", "value": 7896 }, { "year": 2025, "label": "2025", "value": 4002 }, { "year": 2026, "label": "2026\n(YTD)", "value": 3750 }], "insights": ["Other land transport is the dominant industry.", "Other personal service activities is the second-largest industry.", "Champion Portal grievances: 73.", "Registrations peaked in 2024 before declining."] },
+        "comparison": { "d1Name": "Kasaragod", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 34079, "d2": 968931 }, { "metric": "District Rank", "d1": 14, "d2": 14 }, { "metric": "Kerala Share", "d1": 3.52, "d2": 13.66 }], "takeaway": "Kasaragod remains under-penetrated and benefits most from mobile facilitation." },
+        "topIndustries": [{ "sector": "Other land transport", "count": 5002 }, { "sector": "Other personal service activities", "count": 2371 }, { "sector": "Manufacture of other food products", "count": 1723 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 1471 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 1382 }, { "sector": "Travel agency and tour operator activities", "count": 1214 }, { "sector": "Retail sale of other goods in specialized stores", "count": 1176 }, { "sector": "Construction of buildings", "count": 1039 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 1012 }, { "sector": "Other manufacturing n.e.c.", "count": 956 }],
+        "bottomIndustries": [{ "sector": "Activities of call centres", "count": 1 }, { "sector": "Activities of trade unions", "count": 1 }, { "sector": "Pension funding", "count": 1 }, { "sector": "Residential care activities for mental retardation, mental health and substance abuse", "count": 1 }, { "sector": "Freight air transport", "count": 2 }],
+        "opportunity": { "data": [{ "name": "Transport", "enterpriseCount": 54, "schemePenetration": 18, "size": 14, "color": "#0891b2" }, { "name": "Tourism", "enterpriseCount": 48, "schemePenetration": 20, "size": 14, "color": "#059669" }, { "name": "Retail", "enterpriseCount": 46, "schemePenetration": 16, "size": 14, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 44, "schemePenetration": 14, "size": 12, "color": "#8b5cf6" }, { "name": "Apparel", "enterpriseCount": 38, "schemePenetration": 12, "size": 12, "color": "#ef4444" }, { "name": "Services", "enterpriseCount": 35, "schemePenetration": 10, "size": 12, "color": "#f59e0b" }], "focusAreas": "Transport and tourism have the best case for outreach in Kasaragod." },
+        "grievance": { "total": 73, "d1": 170, "d2": 192, "d1Name": "Kasaragod", "d2Name": "Kerala", "d1Pct": 47.0, "d2Pct": 53.0, "categories": [{ "name": "Registration", "count": 94, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 83, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 72, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 62, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 51, "pct": 14.0, "color": "#9ca3af" }], "alert": "Low-volume district with awareness gaps in registration and finance." },
+        "actions": { "d1Name": "Kasaragod", "d2Name": "Kerala", "d1": ["Bring mobile facilitation camps to remote areas.", "Focus scheme communication on transport units.", "Support tourism-linked MSMEs with filing help.", "Reduce registration friction for first-time applicants."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "13.02 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other land transport", "Other personal service activities", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Kasaragod", "data": [3914, 3781, 1736, 1645, 1461, 1412] }, { "district": "Kerala", "data": [8713, 6549, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Kollam",
+        "label": "Kollam",
+        "rank": "7 / 14",
+        "summaryShare": 6.84,
+        "totalMSMEs": 66232,
+        "districtMSMEs": 66232,
+        "totalIndustries": 216,
+        "championPortalCases": 247,
+        "districtRank": "7 / 14",
+        "grievances": { "d1": 470, "d2": 466 },
+        "trend": { "data": [{ "year": 2021, "label": "2021", "value": 7193 }, { "year": 2022, "label": "2022", "value": 11648 }, { "year": 2023, "label": "2023", "value": 14853 }, { "year": 2024, "label": "2024", "value": 14520 }, { "year": 2025, "label": "2025", "value": 8407 }, { "year": 2026, "label": "2026\n(YTD)", "value": 6978 }], "insights": ["Other personal service activities is the largest industry.", "Manufacture of other food products is the second largest industry.", "Champion Portal grievances: 247.", "Registrations peaked in 2023–24 before declining."] },
+        "comparison": { "d1Name": "Kollam", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 66232, "d2": 968931 }, { "metric": "District Rank", "d1": 7, "d2": 14 }, { "metric": "Kerala Share", "d1": 6.84, "d2": 13.66 }], "takeaway": "Kollam has a balanced MSME profile with modest room for scheme expansion." },
+        "topIndustries": [{ "sector": "Other personal service activities", "count": 6157 }, { "sector": "Manufacture of other food products", "count": 3948 }, { "sector": "Other land transport", "count": 3299 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 2731 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 2608 }, { "sector": "Travel agency and tour operator activities", "count": 2420 }, { "sector": "Retail sale of other goods in specialized stores", "count": 2303 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 2097 }, { "sector": "Construction of buildings", "count": 1954 }, { "sector": "Processing and preserving of fish, crustaceans and molluscs", "count": 1823 }],
+        "bottomIndustries": [{ "sector": "Activities of call centres", "count": 1 }, { "sector": "Investigation activities", "count": 1 }, { "sector": "Pension funding", "count": 2 }, { "sector": "Manufacture of air and spacecraft and related machinery", "count": 3 }, { "sector": "Manufacture of magnetic and optical media", "count": 3 }],
+        "opportunity": { "data": [{ "name": "Services", "enterpriseCount": 62, "schemePenetration": 30, "size": 16, "color": "#0891b2" }, { "name": "Transport", "enterpriseCount": 58, "schemePenetration": 26, "size": 16, "color": "#059669" }, { "name": "Retail", "enterpriseCount": 54, "schemePenetration": 22, "size": 14, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 50, "schemePenetration": 18, "size": 14, "color": "#8b5cf6" }, { "name": "Apparel", "enterpriseCount": 44, "schemePenetration": 14, "size": 12, "color": "#ef4444" }, { "name": "Construction", "enterpriseCount": 40, "schemePenetration": 12, "size": 12, "color": "#f59e0b" }], "focusAreas": "Service-led MSMEs and coastal trade units can gain most from stronger scheme awareness." },
+        "grievance": { "total": 247, "d1": 470, "d2": 466, "d1Name": "Kollam", "d2Name": "Kerala", "d1Pct": 50.2, "d2Pct": 49.8, "categories": [{ "name": "Registration", "count": 243, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 215, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 187, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 159, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 132, "pct": 14.0, "color": "#9ca3af" }], "alert": "Registration and finance queries remain the dominant grievance types." },
+        "actions": { "d1Name": "Kollam", "d2Name": "Kerala", "d1": ["Support coastal MSMEs with registration help.", "Promote service-sector schemes in transport clusters.", "Reduce grievance resolution delays.", "Increase digital filing awareness."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "26.35 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Kollam", "data": [6185, 5971, 3318, 2984, 2840, 2661] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Kottayam",
+        "label": "Kottayam",
+        "rank": "10 / 14",
+        "summaryShare": 5.47,
+        "totalMSMEs": 52977,
+        "districtMSMEs": 52977,
+        "totalIndustries": 151,
+        "championPortalCases": 264,
+        "districtRank": "10 / 14",
+        "grievances": { "d1": 270, "d2": 288 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 2533 }, { "year": 2021, "label": "2021", "value": 6626 }, { "year": 2022, "label": "2022", "value": 8749 }, { "year": 2023, "label": "2023", "value": 10151 }, { "year": 2024, "label": "2024", "value": 10712 }, { "year": 2025, "label": "2025", "value": 8920 }, { "year": 2026, "label": "2026\n(YTD)", "value": 5286 }], "insights": ["Other land transport is the largest industry.", "Other personal service activities is the second-largest industry.", "Champion Portal grievances: 264.", "Registrations peaked in 2024 before moderating."] },
+        "comparison": { "d1Name": "Kottayam", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 52977, "d2": 968931 }, { "metric": "District Rank", "d1": 10, "d2": 14 }, { "metric": "Kerala Share", "d1": 5.47, "d2": 13.66 }], "takeaway": "Kottayam needs stronger scheme awareness to push beyond its mid-tier baseline." },
+        "topIndustries": [{ "sector": "Other land transport", "count": 4312 }, { "sector": "Other personal service activities", "count": 3704 }, { "sector": "Manufacture of other food products", "count": 2045 }, { "sector": "Travel agency and tour operator activities", "count": 1936 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 1883 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 1792 }, { "sector": "Retail sale of other goods in specialized stores", "count": 1694 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 1603 }, { "sector": "Construction of buildings", "count": 1525 }, { "sector": "Other manufacturing n.e.c.", "count": 1418 }],
+        "bottomIndustries": [{ "sector": "Compulsory social security activities", "count": 1 }, { "sector": "Provision of services to the community as a whole", "count": 2 }, { "sector": "Radio broadcasting", "count": 2 }, { "sector": "Reinsurance", "count": 2 }, { "sector": "Research and experimental development on social sciences and humanities", "count": 2 }],
+        "opportunity": { "data": [{ "name": "Services", "enterpriseCount": 58, "schemePenetration": 28, "size": 16, "color": "#0891b2" }, { "name": "Transport", "enterpriseCount": 54, "schemePenetration": 24, "size": 14, "color": "#059669" }, { "name": "Retail", "enterpriseCount": 52, "schemePenetration": 20, "size": 14, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 48, "schemePenetration": 18, "size": 12, "color": "#8b5cf6" }, { "name": "Apparel", "enterpriseCount": 42, "schemePenetration": 14, "size": 12, "color": "#ef4444" }, { "name": "Construction", "enterpriseCount": 38, "schemePenetration": 12, "size": 12, "color": "#f59e0b" }], "focusAreas": "Service and transport sectors can absorb more scheme conversion with better support." },
+        "grievance": { "total": 264, "d1": 270, "d2": 288, "d1Name": "Kottayam", "d2Name": "Kerala", "d1Pct": 48.4, "d2Pct": 51.6, "categories": [{ "name": "Registration", "count": 145, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 128, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 112, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 95, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 78, "pct": 14.0, "color": "#9ca3af" }], "alert": "Registration and loan queries are the largest grievance categories." },
+        "actions": { "d1Name": "Kottayam", "d2Name": "Kerala", "d1": ["Run local filing support drives.", "Promote finance access for service MSMEs.", "Extend grievance support to smaller blocks.", "Increase scheme awareness through associations."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "20.41 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Kottayam", "data": [4652, 4518, 2486, 2214, 2107, 2046] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Kozhikode",
+        "label": "Kozhikode",
+        "rank": "4 / 14",
+        "summaryShare": 9.44,
+        "totalMSMEs": 91506,
+        "districtMSMEs": 91506,
+        "totalIndustries": 189,
+        "championPortalCases": 272,
+        "districtRank": "4 / 14",
+        "grievances": { "d1": 598, "d2": 610 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 2594 }, { "year": 2021, "label": "2021", "value": 9829 }, { "year": 2022, "label": "2022", "value": 15030 }, { "year": 2023, "label": "2023", "value": 22188 }, { "year": 2024, "label": "2024", "value": 21278 }, { "year": 2025, "label": "2025", "value": 12765 }, { "year": 2026, "label": "2026\n(YTD)", "value": 7822 }], "insights": ["Kozhikode contributes 9.44% of Kerala MSMEs.", "Other land transport is the largest industry.", "Champion Portal grievances: 272.", "Registrations peaked in 2023 before moderating."] },
+        "comparison": { "d1Name": "Kozhikode", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 91506, "d2": 968931 }, { "metric": "District Rank", "d1": 4, "d2": 14 }, { "metric": "Kerala Share", "d1": 9.44, "d2": 13.66 }], "takeaway": "Kozhikode is a major district hub with strong service and trade activity." },
+        "topIndustries": [{ "sector": "Other land transport", "count": 8747 }, { "sector": "Other personal service activities", "count": 7170 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 4283 }, { "sector": "Manufacture of other food products", "count": 3658 }, { "sector": "Travel agency and tour operator activities", "count": 3246 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 3170 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 2965 }, { "sector": "Retail sale of other goods in specialized stores", "count": 2774 }, { "sector": "Construction of buildings", "count": 2582 }, { "sector": "Other manufacturing n.e.c.", "count": 2551 }],
+        "bottomIndustries": [{ "sector": "Compulsory social security activities", "count": 1 }, { "sector": "Manufacture of irradiation, electromedical and electrotherapeutic equipment", "count": 1 }, { "sector": "Manufacture of magnetic and optical media", "count": 1 }, { "sector": "Manufacture of weapons and ammunition", "count": 1 }, { "sector": "Pension funding", "count": 1 }],
+        "opportunity": { "data": [{ "name": "Retail", "enterpriseCount": 68, "schemePenetration": 30, "size": 18, "color": "#0891b2" }, { "name": "Food", "enterpriseCount": 64, "schemePenetration": 26, "size": 16, "color": "#059669" }, { "name": "Services", "enterpriseCount": 60, "schemePenetration": 22, "size": 16, "color": "#f97316" }, { "name": "Transport", "enterpriseCount": 56, "schemePenetration": 20, "size": 14, "color": "#8b5cf6" }, { "name": "Construction", "enterpriseCount": 50, "schemePenetration": 16, "size": 14, "color": "#ef4444" }, { "name": "Apparel", "enterpriseCount": 46, "schemePenetration": 14, "size": 12, "color": "#f59e0b" }], "focusAreas": "Small trade and food-related units are the best candidates for higher scheme penetration." },
+        "grievance": { "total": 272, "d1": 598, "d2": 610, "d1Name": "Kozhikode", "d2Name": "Kerala", "d1Pct": 49.5, "d2Pct": 50.5, "categories": [{ "name": "Registration", "count": 314, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 278, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 242, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 205, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 169, "pct": 14.0, "color": "#9ca3af" }], "alert": "Trade and service units account for the largest share of grievances." },
+        "actions": { "d1Name": "Kozhikode", "d2Name": "Kerala", "d1": ["Prioritise trade and food cluster camps.", "Expand registration support in busy market areas.", "Increase scheme conversion through district associations.", "Improve grievance follow-up for small traders."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "31.75 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Kozhikode", "data": [9248, 9036, 4581, 4327, 4118, 3942] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Malappuram",
+        "label": "Malappuram",
+        "rank": "5 / 14",
+        "summaryShare": 8.95,
+        "totalMSMEs": 86728,
+        "districtMSMEs": 86728,
+        "totalIndustries": 193,
+        "championPortalCases": 297,
+        "districtRank": "5 / 14",
+        "grievances": { "d1": 670, "d2": 644 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 2422 }, { "year": 2021, "label": "2021", "value": 8261 }, { "year": 2022, "label": "2022", "value": 12830 }, { "year": 2023, "label": "2023", "value": 17958 }, { "year": 2024, "label": "2024", "value": 18657 }, { "year": 2025, "label": "2025", "value": 16624 }, { "year": 2026, "label": "2026\n(YTD)", "value": 9976 }], "insights": ["Malappuram contributes 8.95% of Kerala MSMEs.", "Other land transport is the largest industry.", "Champion Portal grievances: 297.", "MSME registrations peaked in 2024 before moderating."] },
+        "comparison": { "d1Name": "Malappuram", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 86728, "d2": 968931 }, { "metric": "District Rank", "d1": 5, "d2": 14 }, { "metric": "Kerala Share", "d1": 8.95, "d2": 13.66 }], "takeaway": "Malappuram is a high-potential district with room to expand scheme access quickly." },
+        "topIndustries": [{ "sector": "Other land transport", "count": 9829 }, { "sector": "Other personal service activities", "count": 6097 }, { "sector": "Manufacture of other food products", "count": 3366 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 2868 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 2690 }, { "sector": "Event catering and other food service activities", "count": 2538 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 2440 }, { "sector": "Retail sale of other goods in specialized stores", "count": 2236 }, { "sector": "Retail sale in non-specialized stores", "count": 1755 }, { "sector": "Other manufacturing n.e.c.", "count": 1677 }],
+        "bottomIndustries": [{ "sector": "Compulsory social security activities", "count": 1 }, { "sector": "Investigation activities", "count": 1 }, { "sector": "Manufacture of air and spacecraft and related machinery", "count": 1 }, { "sector": "Pension funding", "count": 1 }, { "sector": "Provision of services to the community as a whole", "count": 3 }],
+        "opportunity": { "data": [{ "name": "Retail", "enterpriseCount": 74, "schemePenetration": 28, "size": 18, "color": "#0891b2" }, { "name": "Services", "enterpriseCount": 68, "schemePenetration": 24, "size": 16, "color": "#059669" }, { "name": "Transport", "enterpriseCount": 66, "schemePenetration": 22, "size": 16, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 60, "schemePenetration": 20, "size": 14, "color": "#8b5cf6" }, { "name": "Construction", "enterpriseCount": 54, "schemePenetration": 16, "size": 14, "color": "#ef4444" }, { "name": "Apparel", "enterpriseCount": 50, "schemePenetration": 14, "size": 12, "color": "#f59e0b" }], "focusAreas": "Retail, transport and apparel clusters are strong candidates for higher conversion." },
+        "grievance": { "total": 297, "d1": 670, "d2": 644, "d1Name": "Malappuram", "d2Name": "Kerala", "d1Pct": 51.0, "d2Pct": 49.0, "categories": [{ "name": "Registration", "count": 342, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 302, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 263, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 223, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 184, "pct": 14.0, "color": "#9ca3af" }], "alert": "Large district base implies good payoff from targeted camps." },
+        "actions": { "d1Name": "Malappuram", "d2Name": "Kerala", "d1": ["Target retail and apparel markets with scheme drives.", "Scale local registration camps.", "Strengthen bank linkage for working capital.", "Simplify follow-up for first-time entrepreneurs."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "44.19 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Malappuram", "data": [11463, 10984, 5482, 5117, 4828, 4566] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Palakkad",
+        "label": "Palakkad",
+        "rank": "6 / 14",
+        "summaryShare": 8.19,
+        "totalMSMEs": 79366,
+        "districtMSMEs": 79366,
+        "totalIndustries": 146,
+        "championPortalCases": 186,
+        "districtRank": "6 / 14",
+        "grievances": { "d1": 310, "d2": 334 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 2545 }, { "year": 2021, "label": "2021", "value": 8311 }, { "year": 2022, "label": "2022", "value": 14359 }, { "year": 2023, "label": "2023", "value": 17689 }, { "year": 2024, "label": "2024", "value": 15432 }, { "year": 2025, "label": "2025", "value": 13450 }, { "year": 2026, "label": "2026\n(YTD)", "value": 7580 }], "insights": ["Palakkad contributes 8.19% of Kerala MSMEs.", "Other land transport is the largest industry.", "Champion Portal grievances: 186.", "Registrations peaked in 2023 before declining."] },
+        "comparison": { "d1Name": "Palakkad", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 79366, "d2": 968931 }, { "metric": "District Rank", "d1": 6, "d2": 14 }, { "metric": "Kerala Share", "d1": 8.19, "d2": 13.66 }], "takeaway": "Palakkad benefits from targeted rural outreach and industrial support." },
+        "topIndustries": [{ "sector": "Other land transport", "count": 6916 }, { "sector": "Other personal service activities", "count": 6599 }, { "sector": "Manufacture of other food products", "count": 3563 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 3511 }, { "sector": "Event catering and other food service activities", "count": 2543 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 2409 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 2091 }, { "sector": "Retail sale of other goods in specialized stores", "count": 2062 }, { "sector": "Retail sale in non-specialized stores", "count": 1928 }, { "sector": "Transport via pipeline", "count": 1788 }],
+        "bottomIndustries": [{ "sector": "Pension funding", "count": 1 }, { "sector": "Activities of call centres", "count": 3 }, { "sector": "Investigation activities", "count": 3 }, { "sector": "Manufacture of air and spacecraft and related machinery", "count": 3 }, { "sector": "Manufacture of man-made fibres", "count": 3 }],
+        "opportunity": { "data": [{ "name": "Agriculture", "enterpriseCount": 62, "schemePenetration": 20, "size": 16, "color": "#0891b2" }, { "name": "Services", "enterpriseCount": 58, "schemePenetration": 22, "size": 16, "color": "#059669" }, { "name": "Transport", "enterpriseCount": 54, "schemePenetration": 18, "size": 14, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 50, "schemePenetration": 16, "size": 14, "color": "#8b5cf6" }, { "name": "Construction", "enterpriseCount": 46, "schemePenetration": 14, "size": 12, "color": "#ef4444" }, { "name": "Retail", "enterpriseCount": 42, "schemePenetration": 12, "size": 12, "color": "#f59e0b" }], "focusAreas": "Agriculture and food processing can benefit most from deeper scheme support." },
+        "grievance": { "total": 186, "d1": 310, "d2": 334, "d1Name": "Palakkad", "d2Name": "Kerala", "d1Pct": 48.1, "d2Pct": 51.9, "categories": [{ "name": "Registration", "count": 167, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 148, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 129, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 110, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 90, "pct": 14.0, "color": "#9ca3af" }], "alert": "Rural clusters drive most grievance volume." },
+        "actions": { "d1Name": "Palakkad", "d2Name": "Kerala", "d1": ["Run outreach in rural industrial blocks.", "Support agribusiness filings and credit access.", "Promote manufacturing clusters.", "Reduce registration turnaround time."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "28.84 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Palakkad", "data": [5626, 5489, 2814, 2594, 2467, 2325] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Pathanamthitta",
+        "label": "Pathanamthitta",
+        "rank": "14 / 14",
+        "summaryShare": 3.31,
+        "totalMSMEs": 32028,
+        "districtMSMEs": 32028,
+        "totalIndustries": 88,
+        "championPortalCases": 148,
+        "districtRank": "14 / 14",
+        "grievances": { "d1": 132, "d2": 142 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 1269 }, { "year": 2021, "label": "2021", "value": 3425 }, { "year": 2022, "label": "2022", "value": 4930 }, { "year": 2023, "label": "2023", "value": 6959 }, { "year": 2024, "label": "2024", "value": 6458 }, { "year": 2025, "label": "2025", "value": 5525 }, { "year": 2026, "label": "2026\n(YTD)", "value": 3462 }], "insights": ["Pathanamthitta has the lowest MSME count among Kerala districts.", "Other personal service activities is the largest industry.", "Champion Portal grievances: 148.", "Registrations peaked in 2023 before moderating."] },
+        "comparison": { "d1Name": "Pathanamthitta", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 32028, "d2": 968931 }, { "metric": "District Rank", "d1": 14, "d2": 14 }, { "metric": "Kerala Share", "d1": 3.31, "d2": 13.66 }], "takeaway": "Pathanamthitta can benefit quickly from targeted registration support." },
+        "topIndustries": [{ "sector": "Other personal service activities", "count": 3155 }, { "sector": "Other land transport", "count": 2446 }, { "sector": "Manufacture of other food products", "count": 1644 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 1157 }, { "sector": "Event catering and other food service activities", "count": 1085 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 1039 }, { "sector": "Retail sale in non-specialized stores", "count": 907 }, { "sector": "Transport via pipeline", "count": 862 }, { "sector": "Retail sale of other goods in specialized stores", "count": 851 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 837 }],
+        "bottomIndustries": [{ "sector": "Activities of call centres", "count": 1 }, { "sector": "Activities of holding companies", "count": 1 }, { "sector": "Manufacture of irradiation, electromedical and electrotherapeutic equipment", "count": 1 }, { "sector": "Manufacture of optical instruments and equipment", "count": 1 }, { "sector": "Manufacture of weapons and ammunition", "count": 1 }],
+        "opportunity": { "data": [{ "name": "Services", "enterpriseCount": 46, "schemePenetration": 16, "size": 12, "color": "#0891b2" }, { "name": "Agriculture", "enterpriseCount": 44, "schemePenetration": 14, "size": 12, "color": "#059669" }, { "name": "Retail", "enterpriseCount": 42, "schemePenetration": 12, "size": 12, "color": "#f97316" }, { "name": "Transport", "enterpriseCount": 40, "schemePenetration": 10, "size": 12, "color": "#8b5cf6" }, { "name": "Food", "enterpriseCount": 38, "schemePenetration": 12, "size": 12, "color": "#ef4444" }, { "name": "Construction", "enterpriseCount": 34, "schemePenetration": 8, "size": 10, "color": "#f59e0b" }], "focusAreas": "Rural facilitation and registration awareness are the main levers for this district." },
+        "grievance": { "total": 148, "d1": 132, "d2": 142, "d1Name": "Pathanamthitta", "d2Name": "Kerala", "d1Pct": 48.2, "d2Pct": 51.8, "categories": [{ "name": "Registration", "count": 71, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 63, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 55, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 47, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 38, "pct": 14.0, "color": "#9ca3af" }], "alert": "Small-scale registration and finance issues dominate." },
+        "actions": { "d1Name": "Pathanamthitta", "d2Name": "Kerala", "d1": ["Push mobile registration support in rural blocks.", "Improve awareness on available schemes.", "Support small agriculture-linked units.", "Shorten grievance cycle times."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "11.96 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Pathanamthitta", "data": [2148, 2037, 1084, 1026, 964, 908] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Thiruvananthapuram",
+        "label": "Thiruvananthapuram",
+        "rank": "2 / 14",
+        "summaryShare": 12.10,
+        "totalMSMEs": 117214,
+        "districtMSMEs": 117214,
+        "totalIndustries": 198,
+        "championPortalCases": 408,
+        "districtRank": "2 / 14",
+        "grievances": { "d1": 702, "d2": 700 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 6340 }, { "year": 2021, "label": "2021", "value": 15473 }, { "year": 2022, "label": "2022", "value": 19306 }, { "year": 2023, "label": "2023", "value": 23026 }, { "year": 2024, "label": "2024", "value": 21362 }, { "year": 2025, "label": "2025", "value": 19810 }, { "year": 2026, "label": "2026\n(YTD)", "value": 11897 }], "insights": ["Second-largest MSME district in Kerala.", "Other land transport is the largest industry.", "Champion Portal grievances: 408.", "Registrations remained consistently high from 2022 onwards."] },
+        "comparison": { "d1Name": "Thiruvananthapuram", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 117214, "d2": 968931 }, { "metric": "District Rank", "d1": 2, "d2": 14 }, { "metric": "Kerala Share", "d1": 12.10, "d2": 13.66 }], "takeaway": "The capital district is well-positioned for formalisation and support-led growth." },
+        "topIndustries": [{ "sector": "Other land transport", "count": 9003 }, { "sector": "Other personal service activities", "count": 8279 }, { "sector": "Manufacture of other food products", "count": 5440 }, { "sector": "Travel agency and tour operator activities", "count": 4821 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 4215 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 4041 }, { "sector": "Retail sale of other goods in specialized stores", "count": 3847 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 3426 }, { "sector": "Construction of buildings", "count": 3112 }, { "sector": "Other manufacturing n.e.c.", "count": 2891 }],
+        "bottomIndustries": [{ "sector": "Manufacture of weapons and ammunition", "count": 1 }, { "sector": "Manufacture of irradiation, electromedical and electrotherapeutic equipment", "count": 3 }, { "sector": "Manufacture of magnetic and optical media", "count": 3 }, { "sector": "Manufacture of man-made fibres", "count": 3 }, { "sector": "Pension funding", "count": 3 }],
+        "opportunity": { "data": [{ "name": "Services", "enterpriseCount": 74, "schemePenetration": 34, "size": 18, "color": "#0891b2" }, { "name": "Retail", "enterpriseCount": 68, "schemePenetration": 26, "size": 16, "color": "#059669" }, { "name": "Transport", "enterpriseCount": 64, "schemePenetration": 22, "size": 16, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 60, "schemePenetration": 20, "size": 14, "color": "#8b5cf6" }, { "name": "IT Services", "enterpriseCount": 56, "schemePenetration": 18, "size": 14, "color": "#ef4444" }, { "name": "Construction", "enterpriseCount": 52, "schemePenetration": 16, "size": 14, "color": "#f59e0b" }], "focusAreas": "Services, transport and IT-linked units are the best candidates for targeted scheme conversion." },
+        "grievance": { "total": 408, "d1": 702, "d2": 700, "d1Name": "Thiruvananthapuram", "d2Name": "Kerala", "d1Pct": 50.1, "d2Pct": 49.9, "categories": [{ "name": "Registration", "count": 365, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 322, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 280, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 239, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 196, "pct": 14.0, "color": "#9ca3af" }], "alert": "The capital district needs fast and visible resolution on registration and finance cases." },
+        "actions": { "d1Name": "Thiruvananthapuram", "d2Name": "Kerala", "d1": ["Promote service-sector schemes in the capital district.", "Expand digital filing assistance.", "Increase support for IT and trade clusters.", "Improve grievance turnarounds."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "33.87 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores", "Event catering and other food service activities"], "rows": [{ "district": "Thiruvananthapuram", "data": [10128, 9784, 5062, 4725, 4518, 4296] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Thrissur",
+        "label": "Thrissur",
+        "rank": "3 / 14",
+        "summaryShare": 9.58,
+        "totalMSMEs": 92857,
+        "districtMSMEs": 92857,
+        "totalIndustries": 204,
+        "championPortalCases": 459,
+        "districtRank": "3 / 14",
+        "grievances": { "d1": 840, "d2": 838 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 3603 }, { "year": 2021, "label": "2021", "value": 11636 }, { "year": 2022, "label": "2022", "value": 16602 }, { "year": 2023, "label": "2023", "value": 18367 }, { "year": 2024, "label": "2024", "value": 19734 }, { "year": 2025, "label": "2025", "value": 14221 }, { "year": 2026, "label": "2026\n(YTD)", "value": 8694 }], "insights": ["Thrissur is the third-largest MSME district in Kerala.", "Other land transport is the largest industry (8,604 enterprises).", "Champion Portal grievances: 459.", "Registrations peaked in 2024 before moderating."] },
+        "comparison": { "d1Name": "Thrissur", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 92857, "d2": 968931 }, { "metric": "District Rank", "d1": 3, "d2": 14 }, { "metric": "Kerala Share", "d1": 9.58, "d2": 13.66 }], "takeaway": "Thrissur is a top-tier district with strong scheme conversion potential." },
+        "topIndustries": [{ "sector": "Other land transport", "count": 8604 }, { "sector": "Other personal service activities", "count": 5944 }, { "sector": "Manufacture of other food products", "count": 4772 }, { "sector": "Manufacture of wearing apparel except fur apparel", "count": 3446 }, { "sector": "Event catering and other food service activities", "count": 3228 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 2828 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 2783 }, { "sector": "Retail sale of other goods in specialized stores", "count": 2555 }, { "sector": "Other manufacturing n.e.c.", "count": 2354 }, { "sector": "Retail sale in non-specialized stores", "count": 2105 }],
+        "bottomIndustries": [{ "sector": "Provision of services to the community as a whole", "count": 3 }, { "sector": "Pension funding", "count": 2 }, { "sector": "Activities of call centres", "count": 1 }, { "sector": "Manufacture of irradiation, electromedical and electrotherapeutic equipment", "count": 1 }, { "sector": "Manufacture of military fighting vehicles", "count": 1 }],
+        "opportunity": { "data": [{ "name": "Manufacturing", "enterpriseCount": 72, "schemePenetration": 34, "size": 18, "color": "#0891b2" }, { "name": "Retail", "enterpriseCount": 68, "schemePenetration": 28, "size": 18, "color": "#059669" }, { "name": "Transport", "enterpriseCount": 64, "schemePenetration": 24, "size": 16, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 60, "schemePenetration": 22, "size": 16, "color": "#8b5cf6" }, { "name": "Apparel", "enterpriseCount": 56, "schemePenetration": 18, "size": 14, "color": "#ef4444" }, { "name": "Services", "enterpriseCount": 52, "schemePenetration": 16, "size": 14, "color": "#f59e0b" }], "focusAreas": "Manufacturing and retail clusters can absorb more credit-linked and promotion schemes." },
+        "grievance": { "total": 459, "d1": 840, "d2": 838, "d1Name": "Thrissur", "d2Name": "Kerala", "d1Pct": 50.1, "d2Pct": 49.9, "categories": [{ "name": "Registration", "count": 436, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 386, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 336, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 285, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 235, "pct": 14.0, "color": "#9ca3af" }], "alert": "A high-volume district where even small improvements have a large absolute impact." },
+        "actions": { "d1Name": "Thrissur", "d2Name": "Kerala", "d1": ["Scale conversion drives in manufacturing estates.", "Promote scheme participation in retail clusters.", "Strengthen grievance handling capacity.", "Maintain momentum in high-performing segments."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "31.21 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other land transport", "Other personal service activities", "Manufacture of other food products", "Manufacture of wearing apparel except fur apparel", "Event catering and other food service activities", "Retail sale of food beverages and tobacco in specialized stores"], "rows": [{ "district": "Thrissur", "data": [8362, 5944, 4772, 3446, 3228, 2828] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      },
+      {
+        "id": "Wayanad",
+        "label": "Wayanad",
+        "rank": "14 / 14",
+        "summaryShare": 2.64,
+        "totalMSMEs": 25609,
+        "districtMSMEs": 25609,
+        "totalIndustries": 76,
+        "championPortalCases": 62,
+        "districtRank": "14 / 14",
+        "grievances": { "d1": 92, "d2": 106 },
+        "trend": { "data": [{ "year": 2020, "label": "2020", "value": 638 }, { "year": 2021, "label": "2021", "value": 2673 }, { "year": 2022, "label": "2022", "value": 4441 }, { "year": 2023, "label": "2023", "value": 5231 }, { "year": 2024, "label": "2024", "value": 5872 }, { "year": 2025, "label": "2025", "value": 4575 }, { "year": 2026, "label": "2026\n(YTD)", "value": 2179 }], "insights": ["Wayanad has the lowest MSME count among all Kerala districts.", "Other personal service activities is the largest industry (3,658 enterprises).", "Champion Portal grievances: 62.", "Registrations peaked in 2024 before moderating."] },
+        "comparison": { "d1Name": "Wayanad", "d2Name": "Kerala", "metrics": [{ "metric": "MSME Count", "d1": 25609, "d2": 968931 }, { "metric": "District Rank", "d1": 14, "d2": 14 }, { "metric": "Kerala Share", "d1": 2.64, "d2": 13.66 }], "takeaway": "Wayanad needs more outreach than structural intervention to improve registrations." },
+        "topIndustries": [{ "sector": "Other personal service activities", "count": 3658 }, { "sector": "Manufacture of other food products", "count": 1362 }, { "sector": "Event catering and other food service activities", "count": 1109 }, { "sector": "Other land transport", "count": 990 }, { "sector": "Retail sale of food beverages and tobacco in specialized stores", "count": 799 }, { "sector": "Retail sale of other household equipment in specialized stores", "count": 694 }, { "sector": "Short term accommodation activities", "count": 678 }, { "sector": "Retail sale in non-specialized stores", "count": 599 }, { "sector": "Retail sale of other goods in specialized stores", "count": 588 }, { "sector": "Other manufacturing n.e.c.", "count": 548 }],
+        "bottomIndustries": [{ "sector": "Sewerage", "count": 2 }, { "sector": "Steam and air conditioning supply", "count": 2 }, { "sector": "Waste collection", "count": 2 }, { "sector": "Manufacture of air and spacecraft and related machinery", "count": 1 }, { "sector": "Pension funding", "count": 1 }],
+        "opportunity": { "data": [{ "name": "Tourism", "enterpriseCount": 42, "schemePenetration": 18, "size": 12, "color": "#0891b2" }, { "name": "Agriculture", "enterpriseCount": 40, "schemePenetration": 16, "size": 12, "color": "#059669" }, { "name": "Transport", "enterpriseCount": 36, "schemePenetration": 14, "size": 10, "color": "#f97316" }, { "name": "Food", "enterpriseCount": 34, "schemePenetration": 12, "size": 10, "color": "#8b5cf6" }, { "name": "Services", "enterpriseCount": 30, "schemePenetration": 10, "size": 10, "color": "#ef4444" }, { "name": "Retail", "enterpriseCount": 28, "schemePenetration": 8, "size": 10, "color": "#f59e0b" }], "focusAreas": "Tourism and agriculture are the clearest intervention areas for Wayanad." },
+        "grievance": { "total": 62, "d1": 92, "d2": 106, "d1Name": "Wayanad", "d2Name": "Kerala", "d1Pct": 46.5, "d2Pct": 53.5, "categories": [{ "name": "Registration", "count": 52, "pct": 26.0, "color": "#1e3a8a" }, { "name": "Loan / Finance", "count": 46, "pct": 23.0, "color": "#1e3a8a" }, { "name": "Scheme Benefits", "count": 40, "pct": 20.0, "color": "#1e3a8a" }, { "name": "Payment Delays", "count": 34, "pct": 17.0, "color": "#f97316" }, { "name": "Others", "count": 26, "pct": 14.0, "color": "#9ca3af" }], "alert": "A low-volume district where outreach has high leverage." },
+        "actions": { "d1Name": "Wayanad", "d2Name": "Kerala", "d1": ["Run mobile camps for tourism and farm units.", "Support digital registration for small businesses.", "Improve access to bank-linked schemes.", "Maintain regular field outreach."], "d2": ["Expand district level MSME facilitation centres.", "Increase awareness in rural enterprises.", "Strengthen financial linkage through banks.", "Improve digital registration assistance."] },
+        "glance": { "population": "8.17 Lakh", "districts": 1, "subDistricts": 0, "blocks": 0, "villages": 0 },
+        "heatmap": { "columns": ["Other personal service activities", "Other land transport", "Growing of perennial crops", "Manufacture of other food products", "Travel agency and tour operator activities", "Retail sale of food beverages and tobacco in specialized stores"], "rows": [{ "district": "Wayanad", "data": [1468, 1416, 842, 736, 682, 654] }, { "district": "Kerala", "data": [6549, 8713, 5038, 4250, 3736, 3440] }] }
+      }
+    ]
+  }
+}
