@@ -11,6 +11,11 @@ export default function SectorHeatmap({ data }) {
 
   if (!data?.columns?.length) return null;
 
+  const isAllDistrictsView = data.rows.length > 2;
+  const title = isAllDistrictsView
+    ? 'Sector Presence Heatmap - All Districts (By MSME Count)'
+    : `Sector Presence Heatmap - ${data.rows[0]?.district} vs ${data.rows[1]?.district} (By MSME Count)`;
+
   const values = data.rows.flatMap((row) => row.data);
   const max = Math.max(...values, 1);
   const color = (value) => {
@@ -25,7 +30,7 @@ export default function SectorHeatmap({ data }) {
     <Panel className="p-3">
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
         {/* <Title>Sector Presence Heatmap - {data.rows[0]?.district} vs {data.rows[1]?.district} (By MSME Count)</Title> */}
-        <SectionHeader title={`Sector Presence Heatmap - ${data.rows[0]?.district} vs ${data.rows[1]?.district} (By MSME Count)`} />
+        <SectionHeader title={title} />
         <div className="flex items-center gap-1">
           <span className="text-[10px] font-bold text-gray-500">Low</span>
           {['bg-emerald-100', 'bg-emerald-300', 'bg-emerald-500', 'bg-emerald-700'].map((item) => <span key={item} className={`h-3 w-5 ${item}`} />)}
