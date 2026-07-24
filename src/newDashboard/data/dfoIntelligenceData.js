@@ -3,6 +3,7 @@ import districtFile from './districtData.json';
 const KERALA = districtFile.state;
 const DISTRICTS = KERALA.districts;
 const DISTRICT_BY_ID = Object.fromEntries(DISTRICTS.map((district) => [district.id, district]));
+const ALL_DISTRICTS_ID = 'All Districts';
 
 const MONTHLY_SEASONALITY = {
   1: 0.81, 2: 0.85, 3: 0.92, 4: 0.96, 5: 1.0,
@@ -82,6 +83,42 @@ function buildHeatmap(district) {
   return district.heatmap;
 }
 
+function buildAllDistrictsHeatmap() {
+  const districtRows = DISTRICTS
+    .filter((district) => district.id !== ALL_DISTRICTS_ID)
+    .slice()
+    .sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' }));
+
+  const aggregateColumns = DISTRICT_BY_ID[ALL_DISTRICTS_ID]?.heatmap?.columns ?? [];
+  const columnSet = new Set(aggregateColumns);
+
+  for (const district of districtRows) {
+    for (const column of district.heatmap?.columns ?? []) {
+      columnSet.add(column);
+    }
+  }
+
+  const columns = [...columnSet];
+
+  const rows = districtRows.map((district) => {
+    const districtColumns = district.heatmap?.columns ?? [];
+    const districtSeries = district.heatmap?.rows?.find((row) => row.district === district.label)
+      ?? district.heatmap?.rows?.[0]
+      ?? { data: [] };
+
+    const valueByColumn = Object.fromEntries(
+      districtColumns.map((column, index) => [column, districtSeries.data?.[index] ?? 0]),
+    );
+
+    return {
+      district: district.label,
+      data: columns.map((column) => valueByColumn[column] ?? 0),
+    };
+  });
+
+  return { columns, rows };
+}
+
 export function getIntelligenceKPIs(stateId, monthYear, district = KERALA.defaultDistrict) {
   const selected = getDistrict(district);
   return buildKpis(selected);
@@ -128,6 +165,9 @@ export function getAtAGlance(stateId, district = KERALA.defaultDistrict) {
 }
 
 export function getSectorHeatmap(stateId, monthYear, district = KERALA.defaultDistrict) {
+  if (district === ALL_DISTRICTS_ID) {
+    return buildAllDistrictsHeatmap();
+  }
   const selected = getDistrict(district);
   return selected.heatmap;
 }
